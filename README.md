@@ -28,8 +28,12 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | Feelcoin (FEEL) | RandomX | CPU | `3290` | `3292` | [feel](https://veinpool.fr/coin/feel?lang=en) |
 | WAM Coin (WAM) | RandomX | CPU | `3310` (CPU) · `3311` (servers) | — | [wam](https://veinpool.fr/coin/wam?lang=en) |
 | Zycord (ZCD) | RandomX v2 | CPU | — | `3300` (direct, 0 % fee) | [zcd](https://veinpool.fr/coin/zcd?lang=en) |
+| Beam (BEAM) | BeamHash III | GPU | `3360` | `3362` | [beam](https://veinpool.fr/coin/beam?lang=en) |
+| Warthog (WART) | Janushash | GPU + CPU | — | `3340` (direct, 0 % fee) | [wart](https://veinpool.fr/coin/wart?lang=en) |
+| Dero (DERO) | AstroBWTv3 | CPU | — | `3350` (direct, 0 % fee, wss getwork) | [dero](https://veinpool.fr/coin/dero?lang=en) |
+| Hoosat (HTN) | Hoohash | GPU · CPU | — | `3330` (direct, 0 % fee) | [htn](https://veinpool.fr/coin/htn?lang=en) |
 
-Host for every port: `veinpool.fr` · Fee: 1 % (Zycord 0 %) · Each coin page has copy-paste commands for Windows, Linux, HiveOS and MMPOS.
+Host for every port: `veinpool.fr` · Fee: 1 % (SOLO direct: 0 % — Zycord, Warthog, Dero, Hoosat: the chain pays the block straight to your address) · Each coin page has copy-paste commands for Windows, Linux, HiveOS and MMPOS.
 
 ## Examples
 
@@ -48,6 +52,16 @@ xmrig -a rx/2 -o veinpool.fr:3300 -u YOUR_ZCD_ADDRESS -p rig1
 
 # WAM Coin (official miner)
 wam-miner -o stratum+tcp://veinpool.fr:3310 -u YOUR_WAM_ADDRESS.rig1
+
+# Warthog SOLO direct — Janushash needs the GPU AND the CPU
+bzminer -a warthog -w YOUR_WART_ADDRESS.rig1 -p stratum+tcp://veinpool.fr:3340 --nvidia --amd --cpu
+
+# Dero SOLO direct (CPU) — the wallet must be registered (Engram / dero-wallet-cli do it on creation)
+dero-miner --wallet-address YOUR_DERO_ADDRESS --daemon-rpc-address veinpool.fr:3350 --mining-threads 8
+
+# Beam (BeamHash III)
+lolMiner --algo BEAM-III --pool veinpool.fr:3360 --user YOUR_BEAM_ADDRESS.rig1
+miner --algo beamhashIII --server veinpool.fr:3360 --user YOUR_BEAM_ADDRESS.rig1   # GMiner
 ```
 
 ## PPLNS or SOLO?
