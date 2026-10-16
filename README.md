@@ -29,9 +29,24 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | WAM Coin (WAM) | RandomX | CPU | `3310` (CPU) · `3311` (servers) | — | [wam](https://veinpool.fr/coin/wam?lang=en) |
 | Zycord (ZCD) | RandomX v2 | CPU | — | `3300` (direct, 0 % fee) | [zcd](https://veinpool.fr/coin/zcd?lang=en) |
 | Beam (BEAM) | BeamHash III | GPU | `3360` | `3362` | [beam](https://veinpool.fr/coin/beam?lang=en) |
+| Grin (GRIN) | Cuckatoo32 | GPU | `3380` | `3382` | [grin](https://veinpool.fr/coin/grin?lang=en) |
 | Warthog (WART) | Janushash | GPU + CPU | — | `3340` (direct, 0 % fee) | [wart](https://veinpool.fr/coin/wart?lang=en) |
 | Dero (DERO) | AstroBWTv3 | CPU | — | `3350` (direct, 0 % fee, wss getwork) | [dero](https://veinpool.fr/coin/dero?lang=en) |
 | Hoosat (HTN) | Hoohash | GPU · CPU | — | `3330` (direct, 0 % fee) | [htn](https://veinpool.fr/coin/htn?lang=en) |
+
+### Opening next (VEIN nodes syncing)
+
+| Coin | Algo | HW | Pool (PPLNS) | SOLO |
+|---|---|---|---|---|
+| Zephyr (ZEPH) | RandomX | CPU | `3450` | `3452` |
+| Nexa (NEXA) | NexaPow | GPU | `3460` | `3462` |
+| Yerbas (YERB) | Ghostrider | CPU | `3390` | `3392` |
+| LuckyPepe (LPEPE) | YescryptR32 | CPU | `3400` | `3402` |
+| Kylacoin (KCN) | Flex | CPU | `3410` | `3412` |
+| Cascoin (CAS) | MinotaurX | CPU | `3430` | `3432` |
+| Tidecoin (TDC) | YespowerTIDE | CPU | `3440` | `3442` |
+
+Full catalog of every CPU / GPU mineable coin (prices, volume, new launches), refreshed every 10 minutes: **https://veinpool.fr/pools?lang=en#catalog**
 
 Host for every port: `veinpool.fr` · Fee: 1 % (SOLO direct: 0 % — Zycord, Warthog, Dero, Hoosat: the chain pays the block straight to your address) · Each coin page has copy-paste commands for Windows, Linux, HiveOS and MMPOS.
 
@@ -59,10 +74,17 @@ bzminer -a warthog -w YOUR_WART_ADDRESS.rig1 -p stratum+tcp://veinpool.fr:3340 -
 # Dero SOLO direct (CPU) — the wallet must be registered (Engram / dero-wallet-cli do it on creation)
 dero-miner --wallet-address YOUR_DERO_ADDRESS --daemon-rpc-address veinpool.fr:3350 --mining-threads 8
 
+# Grin (Cuckatoo32) — login = your grin1… slatepack address
+miner --algo grin32 --server veinpool.fr:3380 --user YOUR_GRIN1_ADDRESS.rig1   # GMiner
+lolMiner --algo C32 --pool veinpool.fr:3380 --user YOUR_GRIN1_ADDRESS.rig1
+
 # Beam (BeamHash III)
 lolMiner --algo BEAM-III --pool veinpool.fr:3360 --user YOUR_BEAM_ADDRESS.rig1
 miner --algo beamhashIII --server veinpool.fr:3360 --user YOUR_BEAM_ADDRESS.rig1   # GMiner
 ```
+
+## HiveOS
+VEIN Pool templates (PPLNS + SOLO) are proposed upstream in [minershive/hive-pooltemplates#1865](https://github.com/minershive/hive-pooltemplates/pull/1865). Until merged, use a *Custom* pool with `veinpool.fr:<port>`.
 
 ## PPLNS or SOLO?
 - **PPLNS**: every block found by any VEIN miner is shared by work done — steady income.
