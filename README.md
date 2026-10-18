@@ -36,16 +36,17 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | Tidecoin (TDC) | YespowerTIDE | CPU | `3440` | `3442` | [tdc](https://veinpool.fr/coin/tdc?lang=en) |
 | Nexa (NEXA) | NexaPow | GPU | `3460` | `3462` | [nexa](https://veinpool.fr/coin/nexa?lang=en) |
 | **CapStash (CAP)** 🆕 | WhirlpoolX2 (Whirlpool-512) | GPU (NVIDIA) | `3510` · `3511` (farms) | `3512` | [cap](https://veinpool.fr/coin/cap?lang=en) |
+| **Zephyr (ZEPH)** 🆕 | RandomX | CPU | `3450` | `3452` | [zeph](https://veinpool.fr/coin/zeph?lang=en) |
+| **Salvium (SAL)** 🆕 | RandomX | CPU | `3100` | `3102` | [sal](https://veinpool.fr/coin/sal?lang=en) |
+| **Yerbas (YERB)** 🆕 | Ghostrider | CPU | `3390` · `3391` (servers) | `3392` | [yerb](https://veinpool.fr/coin/yerb?lang=en) |
 
 ### Opening next
 
 | Coin | Algo | HW | Pool (PPLNS) | SOLO | Status |
 |---|---|---|---|---|---|
-| Zephyr (ZEPH) | RandomX | CPU | `3450` | `3452` | node synced, dedicated pool module in progress |
-| Yerbas (YERB) | Ghostrider | CPU | `3390` | `3392` | node syncing |
 | Keryx (KRX) | KeryxHash / Proof-of-Model | GPU | `3480` | `3482` | node synced, PoM stratum bridge in progress |
 | Riecoin (RIC) | Stella (prime constellations) | CPU | `3530` | `3532` | node synced, StellaPool integration in progress |
-| Salvium (SAL) | RandomX | CPU | `3100` | `3102` | node synced, needs Carrot address support |
+| Satoshi Cash (SCASH) | RandomX (SCASH) | CPU | `3520` | `3522` | node syncing |
 
 Full catalog of every CPU / GPU mineable coin (prices, volume, new launches), refreshed every 10 minutes: **https://veinpool.fr/pools?lang=en#catalog**
 
@@ -79,6 +80,13 @@ lolMiner --algo C32 --pool veinpool.fr:3380 --user YOUR_GRIN1_ADDRESS.rig1
 # CapStash (WhirlpoolX2, NVIDIA) — Omletz Miner / ccminer: https://github.com/Omletz/omletz-miner/releases
 ccminer -a whirlpoolx -o stratum+tcp://veinpool.fr:3510 -u YOUR_CAP_ADDRESS.rig1 -p x --no-longpoll      # PPLNS
 ccminer -a whirlpoolx -o stratum+tcp://veinpool.fr:3512 -u YOUR_CAP_ADDRESS.rig1 -p x --no-longpoll      # SOLO
+
+# Zephyr / Salvium (RandomX, XMRig) — Salvium needs a Carrot address (SC1…, Salvium wallet 1.0+)
+xmrig -a rx/0 -o veinpool.fr:3450 -u YOUR_ZEPH_ADDRESS.rig1 -p x -k      # Zephyr PPLNS (3452 = SOLO)
+xmrig -a rx/0 -o veinpool.fr:3100 -u YOUR_SC1_ADDRESS.rig1 -p x -k       # Salvium PPLNS (3102 = SOLO)
+
+# Yerbas (Ghostrider)
+SRBMiner-MULTI --algorithm ghostrider --disable-gpu --pool veinpool.fr:3390 --wallet YOUR_YERB_ADDRESS.rig1
 
 # Kerrigan (Equihash 192,7, personalization "kerrigan")
 miniZ --par=192,7 --pers=kerrigan --url YOUR_KRGN_ADDRESS.rig1@veinpool.fr:3280
