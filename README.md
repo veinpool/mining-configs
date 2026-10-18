@@ -9,7 +9,6 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 
 | Coin | Algo | HW | Pool (PPLNS) | SOLO | Page |
 |---|---|---|---|---|---|
-| Ergo (ERG) | Autolykos2 | GPU | `3032` (1–4 GPU) · `3034` (5+ GPU) | — | [erg](https://veinpool.fr/coin/erg?lang=en) |
 | Quantus (QTC) | QPoW | GPU | `3040` | `3042` | [qtc](https://veinpool.fr/coin/qtc?lang=en) |
 | Firo (FIRO) | FiroPoW | GPU | `3060` | `3062` | [firo](https://veinpool.fr/coin/firo?lang=en) |
 | Ravencoin (RVN) | KawPow | GPU | `3080` | `3082` | [rvn](https://veinpool.fr/coin/rvn?lang=en) |
@@ -17,7 +16,6 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | Satoxcoin (SATOX) | KawPow | GPU | `3140` | `3142` | [satox](https://veinpool.fr/coin/satox?lang=en) |
 | Neoxa (NEOX) | KawPow | GPU | `3160` | `3162` | [neox](https://veinpool.fr/coin/neox?lang=en) |
 | Gaelium (GAEL) | KawPow | GPU | `3240` | `3242` | [gael](https://veinpool.fr/coin/gael?lang=en) |
-| Kerrigan (KRGN) | KawPow | GPU | `3270` | `3272` | [krgn](https://veinpool.fr/coin/krgn?lang=en) |
 | Kerrigan (KRGN) | Equihash 192,7 | GPU | `3280` | `3282` | [krgneq](https://veinpool.fr/coin/krgneq?lang=en) |
 | Zano (ZANO) | ProgPowZ | GPU | `3170` | `3172` | [zano](https://veinpool.fr/coin/zano?lang=en) |
 | Epic Cash (EPIC) | ProgPow | GPU | `3150` | `3152` | [epic](https://veinpool.fr/coin/epic?lang=en) |
@@ -32,32 +30,32 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | Grin (GRIN) | Cuckatoo32 | GPU | `3380` | `3382` | [grin](https://veinpool.fr/coin/grin?lang=en) |
 | Warthog (WART) | Janushash | GPU + CPU | — | `3340` (direct, 0 % fee) | [wart](https://veinpool.fr/coin/wart?lang=en) |
 | Dero (DERO) | AstroBWTv3 | CPU | — | `3350` (direct, 0 % fee, wss getwork) | [dero](https://veinpool.fr/coin/dero?lang=en) |
-| Hoosat (HTN) | Hoohash | GPU · CPU | — | `3330` (direct, 0 % fee) | [htn](https://veinpool.fr/coin/htn?lang=en) |
+| LuckyPepe (LPEPE) | YescryptR32 | CPU | `3400` | `3402` | [lpepe](https://veinpool.fr/coin/lpepe?lang=en) |
+| Kylacoin (KCN) | Flex | CPU | `3410` | `3412` | [kcn](https://veinpool.fr/coin/kcn?lang=en) |
+| Cascoin (CAS) | MinotaurX | CPU | `3430` | `3432` | [cas](https://veinpool.fr/coin/cas?lang=en) |
+| Tidecoin (TDC) | YespowerTIDE | CPU | `3440` | `3442` | [tdc](https://veinpool.fr/coin/tdc?lang=en) |
+| Nexa (NEXA) | NexaPow | GPU | `3460` | `3462` | [nexa](https://veinpool.fr/coin/nexa?lang=en) |
+| **CapStash (CAP)** 🆕 | WhirlpoolX2 (Whirlpool-512) | GPU (NVIDIA) | `3510` · `3511` (farms) | `3512` | [cap](https://veinpool.fr/coin/cap?lang=en) |
 
-### Opening next (VEIN nodes syncing)
+### Opening next
 
-| Coin | Algo | HW | Pool (PPLNS) | SOLO |
-|---|---|---|---|---|
-| Zephyr (ZEPH) | RandomX | CPU | `3450` | `3452` |
-| Nexa (NEXA) | NexaPow | GPU | `3460` | `3462` |
-| Yerbas (YERB) | Ghostrider | CPU | `3390` | `3392` |
-| LuckyPepe (LPEPE) | YescryptR32 | CPU | `3400` | `3402` |
-| Kylacoin (KCN) | Flex | CPU | `3410` | `3412` |
-| Cascoin (CAS) | MinotaurX | CPU | `3430` | `3432` |
-| Tidecoin (TDC) | YespowerTIDE | CPU | `3440` | `3442` |
+| Coin | Algo | HW | Pool (PPLNS) | SOLO | Status |
+|---|---|---|---|---|---|
+| Zephyr (ZEPH) | RandomX | CPU | `3450` | `3452` | node synced, dedicated pool module in progress |
+| Yerbas (YERB) | Ghostrider | CPU | `3390` | `3392` | node syncing |
+| Keryx (KRX) | KeryxHash / Proof-of-Model | GPU | `3480` | `3482` | node synced, PoM stratum bridge in progress |
+| Riecoin (RIC) | Stella (prime constellations) | CPU | `3530` | `3532` | node synced, StellaPool integration in progress |
+| Salvium (SAL) | RandomX | CPU | `3100` | `3102` | node synced, needs Carrot address support |
 
 Full catalog of every CPU / GPU mineable coin (prices, volume, new launches), refreshed every 10 minutes: **https://veinpool.fr/pools?lang=en#catalog**
 
-Host for every port: `veinpool.fr` · Fee: 1 % (SOLO direct: 0 % — Zycord, Warthog, Dero, Hoosat: the chain pays the block straight to your address) · Each coin page has copy-paste commands for Windows, Linux, HiveOS and MMPOS.
+Host for every port: `veinpool.fr` · Fee: 1 % (SOLO direct: 0 % — Zycord, Warthog, Dero: the chain pays the block straight to your address) · Each coin page has copy-paste commands for Windows, Linux, HiveOS and MMPOS.
 
 ## Examples
 
 ```bash
-# KawPow (Ravencoin shown — swap the port for Neurai, Satoxcoin, Neoxa, Gaelium, Kerrigan)
+# KawPow (Ravencoin shown — swap the port for Neurai, Satoxcoin, Neoxa, Gaelium)
 t-rex -a kawpow -o stratum+tcp://veinpool.fr:3080 -u YOUR_ADDRESS.rig1 -p x
-
-# Ergo
-lolMiner --algo AUTOLYKOS2 --pool veinpool.fr:3032 --user YOUR_ADDRESS.rig1
 
 # Firo
 t-rex -a firopow -o stratum+tcp://veinpool.fr:3060 -u YOUR_ADDRESS.rig1 -p x
@@ -77,6 +75,22 @@ dero-miner --wallet-address YOUR_DERO_ADDRESS --daemon-rpc-address veinpool.fr:3
 # Grin (Cuckatoo32) — login = your grin1… slatepack address
 miner --algo grin32 --server veinpool.fr:3380 --user YOUR_GRIN1_ADDRESS.rig1   # GMiner
 lolMiner --algo C32 --pool veinpool.fr:3380 --user YOUR_GRIN1_ADDRESS.rig1
+
+# CapStash (WhirlpoolX2, NVIDIA) — Omletz Miner / ccminer: https://github.com/Omletz/omletz-miner/releases
+ccminer -a whirlpoolx -o stratum+tcp://veinpool.fr:3510 -u YOUR_CAP_ADDRESS.rig1 -p x --no-longpoll      # PPLNS
+ccminer -a whirlpoolx -o stratum+tcp://veinpool.fr:3512 -u YOUR_CAP_ADDRESS.rig1 -p x --no-longpoll      # SOLO
+
+# Kerrigan (Equihash 192,7, personalization "kerrigan")
+miniZ --par=192,7 --pers=kerrigan --url YOUR_KRGN_ADDRESS.rig1@veinpool.fr:3280
+
+# CPU coins (SRBMiner-MULTI) — LuckyPepe / Kylacoin / Cascoin / Tidecoin
+SRBMiner-MULTI --algorithm yescryptr32 --disable-gpu --pool veinpool.fr:3400 --wallet YOUR_LPEPE_ADDRESS.rig1
+SRBMiner-MULTI --algorithm flex        --disable-gpu --pool veinpool.fr:3410 --wallet YOUR_KCN_ADDRESS.rig1
+SRBMiner-MULTI --algorithm minotaurx   --disable-gpu --pool veinpool.fr:3430 --wallet YOUR_CAS_ADDRESS.rig1
+SRBMiner-MULTI --algorithm yespowertide --disable-gpu --pool veinpool.fr:3440 --wallet YOUR_TDC_ADDRESS.rig1
+
+# Nexa (NexaPow)
+lolMiner --algo NEXA --pool veinpool.fr:3460 --user YOUR_NEXA_ADDRESS.rig1
 
 # Beam (BeamHash III)
 lolMiner --algo BEAM-III --pool veinpool.fr:3360 --user YOUR_BEAM_ADDRESS.rig1
