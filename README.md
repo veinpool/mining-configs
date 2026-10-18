@@ -39,6 +39,7 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | **Zephyr (ZEPH)** 🆕 | RandomX | CPU | `3450` | `3452` | [zeph](https://veinpool.fr/coin/zeph?lang=en) |
 | **Salvium (SAL)** 🆕 | RandomX | CPU | `3100` | `3102` | [sal](https://veinpool.fr/coin/sal?lang=en) |
 | **Yerbas (YERB)** 🆕 | Ghostrider | CPU | `3390` · `3391` (servers) | `3392` | [yerb](https://veinpool.fr/coin/yerb?lang=en) |
+| **Satoshi Cash (SCASH)** 🆕 | RandomX (SCASH) | CPU | `3520` · `3521` (servers) | `3522` | [scash](https://veinpool.fr/coin/scash?lang=en) |
 
 ### Opening next
 
@@ -46,7 +47,6 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 |---|---|---|---|---|---|
 | Keryx (KRX) | KeryxHash / Proof-of-Model | GPU | `3480` | `3482` | node synced, PoM stratum bridge in progress |
 | Riecoin (RIC) | Stella (prime constellations) | CPU | `3530` | `3532` | node synced, StellaPool integration in progress |
-| Satoshi Cash (SCASH) | RandomX (SCASH) | CPU | `3520` | `3522` | node syncing |
 
 Full catalog of every CPU / GPU mineable coin (prices, volume, new launches), refreshed every 10 minutes: **https://veinpool.fr/pools?lang=en#catalog**
 
@@ -85,6 +85,9 @@ ccminer -a whirlpoolx -o stratum+tcp://veinpool.fr:3512 -u YOUR_CAP_ADDRESS.rig1
 xmrig -a rx/0 -o veinpool.fr:3450 -u YOUR_ZEPH_ADDRESS.rig1 -p x -k      # Zephyr PPLNS (3452 = SOLO)
 xmrig -a rx/0 -o veinpool.fr:3100 -u YOUR_SC1_ADDRESS.rig1 -p x -k       # Salvium PPLNS (3102 = SOLO)
 
+# Satoshi Cash (RandomX SCASH variant — XMRig has no SCASH mode, use SRBMiner 3.7+)
+SRBMiner-MULTI --algorithm randomscash --disable-gpu --pool veinpool.fr:3520 --wallet YOUR_SCASH_ADDRESS.rig1   # PPLNS (3522 = SOLO)
+
 # Yerbas (Ghostrider)
 SRBMiner-MULTI --algorithm ghostrider --disable-gpu --pool veinpool.fr:3390 --wallet YOUR_YERB_ADDRESS.rig1
 
@@ -113,5 +116,7 @@ VEIN Pool templates (PPLNS + SOLO) are proposed upstream in [minershive/hive-poo
 - **SOLO**: you keep the whole block (minus 1 %) if your rig finds it — on small networks this is realistic.
 
 Live stats, realtime rig alerts and a pool/solo profit calculator: **https://veinpool.fr/?lang=en**
+
+Live market for every coin (price, 24 h change, volume, candlestick chart from its main exchange, refreshed every 10 s): **https://veinpool.fr/?lang=en#marches** · each coin page also links its official site, explorer, GitHub and exchange.
 
 Contact: contact@veinpool.fr
