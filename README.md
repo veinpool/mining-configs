@@ -41,6 +41,7 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | **Yerbas (YERB)** 🆕 | Ghostrider | CPU | `3390` · `3391` (servers) | `3392` | [yerb](https://veinpool.fr/coin/yerb?lang=en) |
 | **Satoshi Cash (SCASH)** 🆕 | RandomX (SCASH) | CPU | `3520` · `3521` (servers) | `3522` | [scash](https://veinpool.fr/coin/scash?lang=en) |
 | **Karlsen (KLS)** 🆕 | KarlsenHashV2 (FishHash) | GPU | `3470` | `3472` | [kls](https://veinpool.fr/coin/kls?lang=en) |
+| **Conceal (CCX)** 🆕 | CryptoNight-GPU | GPU + CPU | `3560` | `3562` | [ccx](https://veinpool.fr/coin/ccx?lang=en) |
 | **Riecoin (RIC)** 🆕 | Stella (prime constellations) | CPU | `3530` (login = ric1 address) | — | [ric](https://veinpool.fr/coin/ric?lang=en) |
 
 ### Opening next
@@ -48,7 +49,6 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | Coin | Algo | HW | Pool (PPLNS) | SOLO | Status |
 |---|---|---|---|---|---|
 | Keryx (KRX) | KeryxHash / Proof-of-Model | GPU | `3480` | `3482` | node synced, PoM stratum bridge in progress |
-| Conceal (CCX) | CryptoNight-GPU | GPU | `3560` | `3562` | node syncing, pool ready |
 | Phicoin (PHI) | PhiHash | GPU | `3570` | `3572` | node syncing, pool ready |
 
 Full catalog of every CPU / GPU mineable coin (prices, volume, new launches), refreshed every 10 minutes: **https://veinpool.fr/pools?lang=en#catalog**
