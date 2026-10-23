@@ -46,6 +46,14 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | **Phicoin (PHI)** 🆕 | PhiHash | GPU | `3570` | `3572` | [phi](https://veinpool.fr/coin/phi?lang=en) |
 | **Bitcoin (BTC)** 🆕 | SHA-256 | **ASIC · Bitaxe · NerdMiner** | — | `3600` NerdMiner · `3601` Bitaxe · `3602` ASIC (SOLO lottery, 1 %) | [btc](https://veinpool.fr/en/coin/btc) |
 
+### Opening next (nodes syncing, pools configured)
+
+| Coin | Algo | HW | SOLO ports | Status |
+|---|---|---|---|---|
+| Bitcoin Cash (BCH) | SHA-256 | ASIC · Bitaxe · NerdMiner | `3610` NerdMiner · `3611` Bitaxe · `3612` ASIC | node syncing |
+| Litecoin (LTC) | Scrypt | Scrypt ASIC | `3620` mini / home · `3622` ASIC | node syncing |
+| Dogecoin (DOGE) | Scrypt | Scrypt ASIC | `3630` mini / home · `3632` ASIC (no merged mining: DOGE only) | node syncing |
+
 Full catalog of every CPU / GPU mineable coin (prices, volume, new launches), refreshed every 10 minutes: **https://veinpool.fr/pools?lang=en#catalog**
 
 Host for every port: `veinpool.fr` · Fee: 1 % (SOLO direct: 0 % — Zycord, Warthog, Dero: the chain pays the block straight to your address) · Each coin page has copy-paste commands for Windows, Linux, HiveOS and MMPOS.
