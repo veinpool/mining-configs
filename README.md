@@ -1,49 +1,49 @@
 # VEIN Pool — mining configs
 
-Ready-to-use stratum settings for every coin on **[VEIN Pool](https://veinpool.fr/?lang=en)** (EU, France).
+Ready-to-use stratum settings for every coin on **[VEIN Pool](https://veinpool.fr/en)** (EU, France).
 Your wallet address is your login — no account, no KYC. Add `.rigname` after the address to name each machine.
 
-🇬🇧 [veinpool.fr/?lang=en](https://veinpool.fr/?lang=en) · 🇫🇷 [veinpool.fr](https://veinpool.fr)
+🇬🇧 [veinpool.fr/en](https://veinpool.fr/en) · 🇫🇷 [veinpool.fr](https://veinpool.fr)
 
 ## Ports
 
 | Coin | Algo | HW | Pool (PPLNS) | SOLO | Page |
 |---|---|---|---|---|---|
-| Quantus (QTC) | QPoW | GPU | `3040` | `3042` | [qtc](https://veinpool.fr/coin/qtc?lang=en) |
-| Firo (FIRO) | FiroPoW | GPU | `3060` | `3062` | [firo](https://veinpool.fr/coin/firo?lang=en) |
-| Ravencoin (RVN) | KawPow | GPU | `3080` | `3082` | [rvn](https://veinpool.fr/coin/rvn?lang=en) |
-| Neurai (XNA) | KawPow | GPU | `3130` | `3132` | [xna](https://veinpool.fr/coin/xna?lang=en) |
-| Satoxcoin (SATOX) | KawPow | GPU | `3140` | `3142` | [satox](https://veinpool.fr/coin/satox?lang=en) |
-| Neoxa (NEOX) | KawPow | GPU | `3160` | `3162` | [neox](https://veinpool.fr/coin/neox?lang=en) |
-| Gaelium (GAEL) | KawPow | GPU | `3240` | `3242` | [gael](https://veinpool.fr/coin/gael?lang=en) |
-| Kerrigan (KRGN) | Equihash 192,7 | GPU | `3280` | `3282` | [krgneq](https://veinpool.fr/coin/krgneq?lang=en) |
-| Zano (ZANO) | ProgPowZ | GPU | `3170` | `3172` | [zano](https://veinpool.fr/coin/zano?lang=en) |
-| Epic Cash (EPIC) | ProgPow | GPU | `3150` | `3152` | [epic](https://veinpool.fr/coin/epic?lang=en) |
-| Qubitcoin (QTC) | Qhash | GPU | `3210` | `3212` | [qubit](https://veinpool.fr/coin/qubit?lang=en) |
-| Ycash (YEC) | Equihash 192,7 | GPU | `3230` | `3232` | [yec](https://veinpool.fr/coin/yec?lang=en) |
-| Tari (XTM) | RandomXT | CPU | `3070` | `3072` | [xtm](https://veinpool.fr/coin/xtm?lang=en) |
-| Xelis (XEL) | XelisHash v3 | CPU | `3120` | `3122` | [xel](https://veinpool.fr/coin/xel?lang=en) |
-| Feelcoin (FEEL) | RandomX | CPU | `3290` | `3292` | [feel](https://veinpool.fr/coin/feel?lang=en) |
-| WAM Coin (WAM) | RandomX | CPU | `3310` (CPU) · `3311` (servers) | — | [wam](https://veinpool.fr/coin/wam?lang=en) |
-| Zycord (ZCD) | RandomX v2 | CPU | — | `3300` (direct, 0 % fee) | [zcd](https://veinpool.fr/coin/zcd?lang=en) |
-| Beam (BEAM) | BeamHash III | GPU | `3360` | `3362` | [beam](https://veinpool.fr/coin/beam?lang=en) |
-| Grin (GRIN) | Cuckatoo32 | GPU | `3380` | `3382` | [grin](https://veinpool.fr/coin/grin?lang=en) |
-| Warthog (WART) | Janushash | GPU + CPU | — | `3340` (direct, 0 % fee) | [wart](https://veinpool.fr/coin/wart?lang=en) |
-| Dero (DERO) | AstroBWTv3 | CPU | — | `3350` (direct, 0 % fee, wss getwork) | [dero](https://veinpool.fr/coin/dero?lang=en) |
-| LuckyPepe (LPEPE) | YescryptR32 | CPU | `3400` | `3402` | [lpepe](https://veinpool.fr/coin/lpepe?lang=en) |
-| Kylacoin (KCN) | Flex | CPU | `3410` | `3412` | [kcn](https://veinpool.fr/coin/kcn?lang=en) |
-| Cascoin (CAS) | MinotaurX | CPU | `3430` | `3432` | [cas](https://veinpool.fr/coin/cas?lang=en) |
-| Tidecoin (TDC) | YespowerTIDE | CPU | `3440` | `3442` | [tdc](https://veinpool.fr/coin/tdc?lang=en) |
-| Nexa (NEXA) | NexaPow | GPU | `3460` | `3462` | [nexa](https://veinpool.fr/coin/nexa?lang=en) |
-| **CapStash (CAP)** 🆕 | WhirlpoolX2 (Whirlpool-512) | GPU (NVIDIA) | `3510` · `3511` (farms) | `3512` | [cap](https://veinpool.fr/coin/cap?lang=en) |
-| **Zephyr (ZEPH)** 🆕 | RandomX | CPU | `3450` | `3452` | [zeph](https://veinpool.fr/coin/zeph?lang=en) |
-| **Salvium (SAL)** 🆕 | RandomX | CPU | `3100` | `3102` | [sal](https://veinpool.fr/coin/sal?lang=en) |
-| **Yerbas (YERB)** 🆕 | Ghostrider | CPU | `3390` · `3391` (servers) | `3392` | [yerb](https://veinpool.fr/coin/yerb?lang=en) |
-| **Satoshi Cash (SCASH)** 🆕 | RandomX (SCASH) | CPU | `3520` · `3521` (servers) | `3522` | [scash](https://veinpool.fr/coin/scash?lang=en) |
-| **Karlsen (KLS)** 🆕 | KarlsenHashV2 (FishHash) | GPU | `3470` | `3472` | [kls](https://veinpool.fr/coin/kls?lang=en) |
-| **Conceal (CCX)** 🆕 | CryptoNight-GPU | GPU + CPU | `3560` | `3562` | [ccx](https://veinpool.fr/coin/ccx?lang=en) |
-| **Riecoin (RIC)** 🆕 | Stella (prime constellations) | CPU | `3530` (login = ric1 address) | — | [ric](https://veinpool.fr/coin/ric?lang=en) |
-| **Phicoin (PHI)** 🆕 | PhiHash | GPU | `3570` | `3572` | [phi](https://veinpool.fr/coin/phi?lang=en) |
+| Quantus (QTC) | QPoW | GPU | `3040` | `3042` | [qtc](https://veinpool.fr/en/coin/qtc) |
+| Firo (FIRO) | FiroPoW | GPU | `3060` | `3062` | [firo](https://veinpool.fr/en/coin/firo) |
+| Ravencoin (RVN) | KawPow | GPU | `3080` | `3082` | [rvn](https://veinpool.fr/en/coin/rvn) |
+| Neurai (XNA) | KawPow | GPU | `3130` | `3132` | [xna](https://veinpool.fr/en/coin/xna) |
+| Satoxcoin (SATOX) | KawPow | GPU | `3140` | `3142` | [satox](https://veinpool.fr/en/coin/satox) |
+| Neoxa (NEOX) | KawPow | GPU | `3160` | `3162` | [neox](https://veinpool.fr/en/coin/neox) |
+| Gaelium (GAEL) | KawPow | GPU | `3240` | `3242` | [gael](https://veinpool.fr/en/coin/gael) |
+| Kerrigan (KRGN) | Equihash 192,7 | GPU | `3280` | `3282` | [krgneq](https://veinpool.fr/en/coin/krgneq) |
+| Zano (ZANO) | ProgPowZ | GPU | `3170` | `3172` | [zano](https://veinpool.fr/en/coin/zano) |
+| Epic Cash (EPIC) | ProgPow | GPU | `3150` | `3152` | [epic](https://veinpool.fr/en/coin/epic) |
+| Qubitcoin (QTC) | Qhash | GPU | `3210` | `3212` | [qubit](https://veinpool.fr/en/coin/qubit) |
+| Ycash (YEC) | Equihash 192,7 | GPU | `3230` | `3232` | [yec](https://veinpool.fr/en/coin/yec) |
+| Tari (XTM) | RandomXT | CPU | `3070` | `3072` | [xtm](https://veinpool.fr/en/coin/xtm) |
+| Xelis (XEL) | XelisHash v3 | CPU | `3120` | `3122` | [xel](https://veinpool.fr/en/coin/xel) |
+| Feelcoin (FEEL) | RandomX | CPU | `3290` | `3292` | [feel](https://veinpool.fr/en/coin/feel) |
+| WAM Coin (WAM) | RandomX | CPU | `3310` (CPU) · `3311` (servers) | — | [wam](https://veinpool.fr/en/coin/wam) |
+| Zycord (ZCD) | RandomX v2 | CPU | — | `3300` (direct, 0 % fee) | [zcd](https://veinpool.fr/en/coin/zcd) |
+| Beam (BEAM) | BeamHash III | GPU | `3360` | `3362` | [beam](https://veinpool.fr/en/coin/beam) |
+| Grin (GRIN) | Cuckatoo32 | GPU | `3380` | `3382` | [grin](https://veinpool.fr/en/coin/grin) |
+| Warthog (WART) | Janushash | GPU + CPU | — | `3340` (direct, 0 % fee) | [wart](https://veinpool.fr/en/coin/wart) |
+| Dero (DERO) | AstroBWTv3 | CPU | — | `3350` (direct, 0 % fee, wss getwork) | [dero](https://veinpool.fr/en/coin/dero) |
+| LuckyPepe (LPEPE) | YescryptR32 | CPU | `3400` | `3402` | [lpepe](https://veinpool.fr/en/coin/lpepe) |
+| Kylacoin (KCN) | Flex | CPU | `3410` | `3412` | [kcn](https://veinpool.fr/en/coin/kcn) |
+| Cascoin (CAS) | MinotaurX | CPU | `3430` | `3432` | [cas](https://veinpool.fr/en/coin/cas) |
+| Tidecoin (TDC) | YespowerTIDE | CPU | `3440` | `3442` | [tdc](https://veinpool.fr/en/coin/tdc) |
+| Nexa (NEXA) | NexaPow | GPU | `3460` | `3462` | [nexa](https://veinpool.fr/en/coin/nexa) |
+| **CapStash (CAP)** 🆕 | WhirlpoolX2 (Whirlpool-512) | GPU (NVIDIA) | `3510` · `3511` (farms) | `3512` | [cap](https://veinpool.fr/en/coin/cap) |
+| **Zephyr (ZEPH)** 🆕 | RandomX | CPU | `3450` | `3452` | [zeph](https://veinpool.fr/en/coin/zeph) |
+| **Salvium (SAL)** 🆕 | RandomX | CPU | `3100` | `3102` | [sal](https://veinpool.fr/en/coin/sal) |
+| **Yerbas (YERB)** 🆕 | Ghostrider | CPU | `3390` · `3391` (servers) | `3392` | [yerb](https://veinpool.fr/en/coin/yerb) |
+| **Satoshi Cash (SCASH)** 🆕 | RandomX (SCASH) | CPU | `3520` · `3521` (servers) | `3522` | [scash](https://veinpool.fr/en/coin/scash) |
+| **Karlsen (KLS)** 🆕 | KarlsenHashV2 (FishHash) | GPU | `3470` | `3472` | [kls](https://veinpool.fr/en/coin/kls) |
+| **Conceal (CCX)** 🆕 | CryptoNight-GPU | GPU + CPU | `3560` | `3562` | [ccx](https://veinpool.fr/en/coin/ccx) |
+| **Riecoin (RIC)** 🆕 | Stella (prime constellations) | CPU | `3530` (login = ric1 address) | — | [ric](https://veinpool.fr/en/coin/ric) |
+| **Phicoin (PHI)** 🆕 | PhiHash | GPU | `3570` | `3572` | [phi](https://veinpool.fr/en/coin/phi) |
 | **Bitcoin (BTC)** 🆕 | SHA-256 | **ASIC · Bitaxe · NerdMiner** | — | `3600` NerdMiner · `3601` Bitaxe · `3602` ASIC (SOLO lottery, 1 %) | [btc](https://veinpool.fr/en/coin/btc) |
 
 ### Opening next (nodes syncing, pools configured)
@@ -54,7 +54,7 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | Litecoin (LTC) | Scrypt | Scrypt ASIC | `3620` mini / home · `3622` ASIC | node syncing |
 | Dogecoin (DOGE) | Scrypt | Scrypt ASIC | `3630` mini / home · `3632` ASIC (no merged mining: DOGE only) | node syncing |
 
-Full catalog of every CPU / GPU mineable coin (prices, volume, new launches), refreshed every 10 minutes: **https://veinpool.fr/pools?lang=en#catalog**
+Full catalog of every CPU / GPU / ASIC mineable coin (prices, volume, new launches), refreshed every 10 minutes: **https://veinpool.fr/en/pools#catalog**
 
 Host for every port: `veinpool.fr` · Fee: 1 % (SOLO direct: 0 % — Zycord, Warthog, Dero: the chain pays the block straight to your address) · Each coin page has copy-paste commands for Windows, Linux, HiveOS and MMPOS.
 
@@ -134,8 +134,8 @@ VEIN Pool templates (PPLNS + SOLO) are proposed upstream in [minershive/hive-poo
 - **PPLNS**: every block found by any VEIN miner is shared by work done — steady income.
 - **SOLO**: you keep the whole block (minus 1 %) if your rig finds it — on small networks this is realistic.
 
-Live stats, realtime rig alerts and a pool/solo profit calculator: **https://veinpool.fr/?lang=en**
+Live stats, realtime rig alerts and a pool/solo profit calculator: **https://veinpool.fr/en**
 
-Live market for every coin (price, 24 h change, volume, candlestick chart from its main exchange, refreshed every 10 s): **https://veinpool.fr/?lang=en#marches** · each coin page also links its official site, explorer, GitHub and exchange.
+Live market for every coin (price, 24 h change, volume, candlestick chart from its main exchange, refreshed every 10 s): **https://veinpool.fr/en#marches** · each coin page also links its official site, explorer, GitHub and exchange.
 
 Contact: contact@veinpool.fr
