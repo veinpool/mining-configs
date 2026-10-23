@@ -43,13 +43,8 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | **Karlsen (KLS)** 🆕 | KarlsenHashV2 (FishHash) | GPU | `3470` | `3472` | [kls](https://veinpool.fr/coin/kls?lang=en) |
 | **Conceal (CCX)** 🆕 | CryptoNight-GPU | GPU + CPU | `3560` | `3562` | [ccx](https://veinpool.fr/coin/ccx?lang=en) |
 | **Riecoin (RIC)** 🆕 | Stella (prime constellations) | CPU | `3530` (login = ric1 address) | — | [ric](https://veinpool.fr/coin/ric?lang=en) |
-
-### Opening next
-
-| Coin | Algo | HW | Pool (PPLNS) | SOLO | Status |
-|---|---|---|---|---|---|
-| Keryx (KRX) | KeryxHash / Proof-of-Model | GPU | `3480` | `3482` | node synced, PoM stratum bridge in progress |
-| Phicoin (PHI) | PhiHash | GPU | `3570` | `3572` | node syncing, pool ready |
+| **Phicoin (PHI)** 🆕 | PhiHash | GPU | `3570` | `3572` | [phi](https://veinpool.fr/coin/phi?lang=en) |
+| **Bitcoin (BTC)** 🆕 | SHA-256 | **ASIC · Bitaxe · NerdMiner** | — | `3600` NerdMiner · `3601` Bitaxe · `3602` ASIC (SOLO lottery, 1 %) | [btc](https://veinpool.fr/en/coin/btc) |
 
 Full catalog of every CPU / GPU mineable coin (prices, volume, new launches), refreshed every 10 minutes: **https://veinpool.fr/pools?lang=en#catalog**
 
@@ -58,6 +53,12 @@ Host for every port: `veinpool.fr` · Fee: 1 % (SOLO direct: 0 % — Zycord, War
 ## Examples
 
 ```bash
+# Bitcoin SOLO lottery — NerdMiner / Bitaxe / ASIC: type these in the device's web page (no software)
+#   NerdMiner (ESP32):      pool veinpool.fr  port 3600  BTC address = YOUR_BTC_ADDRESS
+#   Bitaxe / NerdAxe (AxeOS): Stratum URL veinpool.fr  Port 3601  User YOUR_BTC_ADDRESS.rig1  Password x
+#   ASIC (Antminer...):     stratum+tcp://veinpool.fr:3602  Worker YOUR_BTC_ADDRESS.rig1  Password x
+cgminer -o stratum+tcp://veinpool.fr:3602 -u YOUR_BTC_ADDRESS.rig1 -p x
+
 # KawPow (Ravencoin shown — swap the port for Neurai, Satoxcoin, Neoxa, Gaelium)
 t-rex -a kawpow -o stratum+tcp://veinpool.fr:3080 -u YOUR_ADDRESS.rig1 -p x
 
