@@ -45,13 +45,13 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | **Riecoin (RIC)** 🆕 | Stella (prime constellations) | CPU | `3530` (login = ric1 address) | — | [ric](https://veinpool.fr/en/coin/ric) |
 | **Phicoin (PHI)** 🆕 | PhiHash | GPU | `3570` | `3572` | [phi](https://veinpool.fr/en/coin/phi) |
 | **Bitcoin (BTC)** 🆕 | SHA-256 | **ASIC · Bitaxe · NerdMiner** | — | `3600` NerdMiner · `3601` Bitaxe · `3602` ASIC (SOLO lottery, 1 %) | [btc](https://veinpool.fr/en/coin/btc) |
+| **Bitcoin Cash (BCH)** 🆕 | SHA-256 | **ASIC · Bitaxe · NerdMiner** | — | `3610` NerdMiner · `3611` Bitaxe · `3612` ASIC (SOLO, 1 %, TLS 13610–13612) | [bch](https://veinpool.fr/en/coin/bch) |
+| **Litecoin (LTC)** 🆕 | Scrypt | **Scrypt ASIC** | — | `3620` mini Scrypt · `3622` ASIC (SOLO, 1 %, LTC only, TLS 13620 / 13622) | [ltc](https://veinpool.fr/en/coin/ltc) |
 
 ### Opening next (nodes syncing, pools configured)
 
 | Coin | Algo | HW | SOLO ports | Status |
 |---|---|---|---|---|
-| Bitcoin Cash (BCH) | SHA-256 | ASIC · Bitaxe · NerdMiner | `3610` NerdMiner · `3611` Bitaxe · `3612` ASIC | node syncing |
-| Litecoin (LTC) | Scrypt | Scrypt ASIC | `3620` mini / home · `3622` ASIC | node syncing |
 | Dogecoin (DOGE) | Scrypt | Scrypt ASIC | `3630` mini / home · `3632` ASIC (no merged mining: DOGE only) | node syncing |
 
 Full catalog of every CPU / GPU / ASIC mineable coin (prices, volume, new launches), refreshed every 10 minutes: **https://veinpool.fr/en/pools#catalog**
@@ -66,6 +66,14 @@ Host for every port: `veinpool.fr` · Fee: 1 % (SOLO direct: 0 % — Zycord, War
 #   Bitaxe / NerdAxe (AxeOS): Stratum URL veinpool.fr  Port 3601  User YOUR_BTC_ADDRESS.rig1  Password x
 #   ASIC (Antminer...):     stratum+tcp://veinpool.fr:3602  Worker YOUR_BTC_ADDRESS.rig1  Password x
 cgminer -o stratum+tcp://veinpool.fr:3602 -u YOUR_BTC_ADDRESS.rig1 -p x
+
+# Bitcoin Cash SOLO — same SHA-256 hardware, network ~325x smaller than Bitcoin's (S21 200 TH/s: ~1 block / 109 days on average)
+#   NerdMiner 3610 · Bitaxe 3611 · ASIC 3612   User YOUR_BCH_ADDRESS.rig1  Password x
+cgminer -o stratum+tcp://veinpool.fr:3612 -u YOUR_BCH_ADDRESS.rig1 -p x
+
+# Litecoin SOLO — Scrypt ASIC (Antminer L7 / L9, Elphapex DG1, Goldshell); LTC only, no merged DOGE
+#   mini Scrypt 3620 · ASIC 3622   Worker YOUR_LTC_ADDRESS.rig1  Password x   (L9 16 GH/s: ~70 % chance of a block per year)
+cgminer --scrypt -o stratum+tcp://veinpool.fr:3622 -u YOUR_LTC_ADDRESS.rig1 -p x
 
 # KawPow (Ravencoin shown — swap the port for Neurai, Satoxcoin, Neoxa, Gaelium)
 t-rex -a kawpow -o stratum+tcp://veinpool.fr:3080 -u YOUR_ADDRESS.rig1 -p x
