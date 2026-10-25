@@ -18,7 +18,7 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | Gaelium (GAEL) | KawPow | GPU | `3240` | `3242` | [gael](https://veinpool.fr/en/coin/gael) |
 | Kerrigan (KRGN) | Equihash 192,7 | GPU | `3280` | `3282` | [krgneq](https://veinpool.fr/en/coin/krgneq) |
 | Zano (ZANO) | ProgPowZ | GPU | `3170` | `3172` | [zano](https://veinpool.fr/en/coin/zano) |
-| Epic Cash (EPIC) | ProgPow | GPU | `3150` | `3152` | [epic](https://veinpool.fr/en/coin/epic) |
+| **Epic Cash (EPIC)** 🆕 CPU too | ProgPow + RandomX | GPU + CPU | `3150` (GPU `progpow_epic`, CPU `randomepic`) | `3152` | [epic](https://veinpool.fr/en/coin/epic) |
 | Qubitcoin (QTC) | Qhash | GPU | `3210` | `3212` | [qubit](https://veinpool.fr/en/coin/qubit) |
 | Ycash (YEC) | Equihash 192,7 | GPU | `3230` | `3232` | [yec](https://veinpool.fr/en/coin/yec) |
 | Tari (XTM) | RandomXT | CPU | `3070` | `3072` | [xtm](https://veinpool.fr/en/coin/xtm) |
@@ -47,12 +47,7 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | **Bitcoin (BTC)** 🆕 | SHA-256 | **ASIC · Bitaxe · NerdMiner** | — | `3600` NerdMiner · `3601` Bitaxe · `3602` ASIC (SOLO lottery, 1 %) | [btc](https://veinpool.fr/en/coin/btc) |
 | **Bitcoin Cash (BCH)** 🆕 | SHA-256 | **ASIC · Bitaxe · NerdMiner** | — | `3610` NerdMiner · `3611` Bitaxe · `3612` ASIC (SOLO, 1 %, TLS 13610–13612) | [bch](https://veinpool.fr/en/coin/bch) |
 | **Litecoin (LTC)** 🆕 | Scrypt | **Scrypt ASIC** | — | `3620` mini Scrypt · `3622` ASIC (SOLO, 1 %, LTC only, TLS 13620 / 13622) | [ltc](https://veinpool.fr/en/coin/ltc) |
-
-### Opening next (nodes syncing, pools configured)
-
-| Coin | Algo | HW | SOLO ports | Status |
-|---|---|---|---|---|
-| Dogecoin (DOGE) | Scrypt | Scrypt ASIC | `3630` mini / home · `3632` ASIC (no merged mining: DOGE only) | node syncing |
+| **Dogecoin (DOGE)** 🆕 | Scrypt | **Scrypt ASIC** | — | `3630` mini Scrypt · `3632` ASIC (SOLO, 1 %, DOGE only) | [doge](https://veinpool.fr/en/coin/doge) |
 
 Full catalog of every CPU / GPU / ASIC mineable coin (prices, volume, new launches), refreshed every 10 minutes: **https://veinpool.fr/en/pools#catalog**
 
@@ -74,6 +69,14 @@ cgminer -o stratum+tcp://veinpool.fr:3612 -u YOUR_BCH_ADDRESS.rig1 -p x
 # Litecoin SOLO — Scrypt ASIC (Antminer L7 / L9, Elphapex DG1, Goldshell); LTC only, no merged DOGE
 #   mini Scrypt 3620 · ASIC 3622   Worker YOUR_LTC_ADDRESS.rig1  Password x   (L9 16 GH/s: ~70 % chance of a block per year)
 cgminer --scrypt -o stratum+tcp://veinpool.fr:3622 -u YOUR_LTC_ADDRESS.rig1 -p x
+
+# Dogecoin SOLO — Scrypt ASIC; DOGE only, no merged LTC; 10,000 DOGE per block, 1 block a minute
+#   mini Scrypt 3630 · ASIC 3632   Worker YOUR_DOGE_ADDRESS.rig1  Password x   (L9 16 GH/s: ~1 block every 4 months on average)
+cgminer --scrypt -o stratum+tcp://veinpool.fr:3632 -u YOUR_DOGE_ADDRESS.rig1 -p x
+
+# Epic Cash — GPU (ProgPow) AND CPU (RandomX) on the same pool, same address: run both, two worker names
+SRBMiner-MULTI --algorithm progpow_epic --disable-cpu --pool veinpool.fr:3150 --wallet YOUR_EPICBOX_ADDRESS.gpu1
+SRBMiner-MULTI --algorithm randomepic --disable-gpu --pool veinpool.fr:3150 --wallet YOUR_EPICBOX_ADDRESS.cpu1
 
 # KawPow (Ravencoin shown — swap the port for Neurai, Satoxcoin, Neoxa, Gaelium)
 t-rex -a kawpow -o stratum+tcp://veinpool.fr:3080 -u YOUR_ADDRESS.rig1 -p x
