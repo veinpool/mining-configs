@@ -1,6 +1,6 @@
 # VEIN Pool — mining configs
 
-Ready-to-use stratum settings for every coin on **[VEIN Pool](https://veinpool.fr/en)** (EU, France).
+Ready-to-use stratum settings for all **40 coins** on **[VEIN Pool](https://veinpool.fr/en)** (EU, France): 20 GPU · 16 CPU · 4 ASIC.
 Your wallet address is your login — no account, no KYC. Add `.rigname` after the address to name each machine.
 
 🇬🇧 [veinpool.fr/en](https://veinpool.fr/en) · 🇫🇷 [veinpool.fr](https://veinpool.fr)
@@ -26,6 +26,7 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | Feelcoin (FEEL) | RandomX | CPU | `3290` | `3292` | [feel](https://veinpool.fr/en/coin/feel) |
 | WAM Coin (WAM) | RandomX | CPU | `3310` (CPU) · `3311` (servers) | — | [wam](https://veinpool.fr/en/coin/wam) |
 | Zycord (ZCD) | RandomX v2 | CPU | — | `3300` (direct, 0 % fee) | [zcd](https://veinpool.fr/en/coin/zcd) |
+| Lajkto Coin (LKCT) | RandomX | CPU | — | `3702` (direct, 0 % fee) | [lkct](https://veinpool.fr/en/coin/lkct) |
 | Beam (BEAM) | BeamHash III | GPU | `3360` | `3362` | [beam](https://veinpool.fr/en/coin/beam) |
 | Grin (GRIN) | Cuckatoo32 | GPU | `3380` | `3382` | [grin](https://veinpool.fr/en/coin/grin) |
 | Warthog (WART) | Janushash | GPU + CPU | — | `3340` (direct, 0 % fee) | [wart](https://veinpool.fr/en/coin/wart) |
@@ -51,7 +52,7 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 
 Full catalog of every CPU / GPU / ASIC mineable coin (prices, volume, new launches), refreshed every 10 minutes: **https://veinpool.fr/en/pools#catalog**
 
-Host for every port: `veinpool.fr` · Fee: 1 % (SOLO direct: 0 % — Zycord, Warthog, Dero: the chain pays the block straight to your address) · Each coin page has copy-paste commands for Windows, Linux, HiveOS and MMPOS.
+Host for every port: `veinpool.fr` · Fee: 1 % (SOLO direct: 0 % — Zycord, Lajkto Coin, Warthog, Dero: the chain pays the block straight to your address) · Each coin page has copy-paste commands for Windows, Linux, HiveOS and MMPOS.
 
 ## Examples
 
@@ -86,6 +87,9 @@ t-rex -a firopow -o stratum+tcp://veinpool.fr:3060 -u YOUR_ADDRESS.rig1 -p x
 
 # Zycord (SOLO direct, blocks paid straight to your address)
 xmrig -a rx/2 -o veinpool.fr:3300 -u YOUR_ZCD_ADDRESS -p rig1
+
+# Lajkto Coin (SOLO direct, 0 % fee; young coin: 15 % founder premine, not listed yet)
+xmrig -a rx/0 -o veinpool.fr:3702 -u YOUR_LKCT_ADDRESS.rig1 -p x -k
 
 # WAM Coin (official miner)
 wam-miner -o stratum+tcp://veinpool.fr:3310 -u YOUR_WAM_ADDRESS.rig1
