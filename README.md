@@ -1,6 +1,6 @@
 # VEIN Pool — mining configs
 
-Ready-to-use stratum settings for all **40 coins** on **[VEIN Pool](https://veinpool.fr/en)** (EU, France): 20 GPU · 16 CPU · 4 ASIC.
+Ready-to-use stratum settings for all **43 coins** on **[VEIN Pool](https://veinpool.fr/en)** (EU, France): 22 GPU · 17 CPU · 4 ASIC.
 Your wallet address is your login — no account, no KYC. Add `.rigname` after the address to name each machine.
 
 🇬🇧 [veinpool.fr/en](https://veinpool.fr/en) · 🇫🇷 [veinpool.fr](https://veinpool.fr)
@@ -49,10 +49,13 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | **Bitcoin Cash (BCH)** 🆕 | SHA-256 | **ASIC · Bitaxe · NerdMiner** | — | `3610` NerdMiner · `3611` Bitaxe · `3612` ASIC (SOLO, 1 %, TLS 13610–13612) | [bch](https://veinpool.fr/en/coin/bch) |
 | **Litecoin (LTC)** 🆕 | Scrypt | **Scrypt ASIC** | — | `3620` mini Scrypt · `3622` ASIC (SOLO, 1 %, LTC only, TLS 13620 / 13622) | [ltc](https://veinpool.fr/en/coin/ltc) |
 | **Dogecoin (DOGE)** 🆕 | Scrypt | **Scrypt ASIC** | — | `3630` mini Scrypt · `3632` ASIC (SOLO, 1 %, DOGE only) | [doge](https://veinpool.fr/en/coin/doge) |
+| **Kiirocoin (KIIRO)** 🆕 | FiroPoW | GPU | `3650` · `3651` (farms) | `3652` | [kiiro](https://veinpool.fr/en/coin/kiiro) |
+| **FortuneBlock (FBX)** 🆕 | Mike | CPU | `3660` · `3661` (servers) | `3662` | [fbx](https://veinpool.fr/en/coin/fbx) |
+| **RIGOR (ORU)** 🆕 | OpuHash (SHA3-256) | GPU + CPU | — | `3642` (direct, 0 % fee, getblocktemplate over `http://`, no stratum) | [oru](https://veinpool.fr/en/coin/oru) |
 
 Full catalog of every CPU / GPU / ASIC mineable coin (prices, volume, new launches), refreshed every 10 minutes: **https://veinpool.fr/en/pools#catalog**
 
-Host for every port: `veinpool.fr` · Fee: 1 % (SOLO direct: 0 % — Zycord, Lajkto Coin, Warthog, Dero: the chain pays the block straight to your address) · Each coin page has copy-paste commands for Windows, Linux, HiveOS and MMPOS.
+Host for every port: `veinpool.fr` · Fee: 1 % (SOLO direct: 0 % — Zycord, Lajkto Coin, RIGOR, Warthog, Dero: the chain pays the block straight to your address) · Each coin page has copy-paste commands for Windows, Linux, HiveOS and MMPOS.
 
 ## Examples
 
@@ -90,6 +93,12 @@ xmrig -a rx/2 -o veinpool.fr:3300 -u YOUR_ZCD_ADDRESS -p rig1
 
 # Lajkto Coin (SOLO direct, 0 % fee; young coin: 15 % founder premine, not listed yet)
 xmrig -a rx/0 -o veinpool.fr:3702 -u YOUR_LKCT_ADDRESS.rig1 -p x -k
+
+# Kiirocoin (same FiroPoW settings as Firo)
+t-rex -a firopow -o stratum+tcp://veinpool.fr:3650 -u YOUR_KIIRO_ADDRESS.rig1 -p x
+
+# FortuneBlock (CPU, Mike; not listed on an exchange yet)
+SRBMiner-MULTI --algorithm mike --disable-gpu --pool veinpool.fr:3660 --wallet YOUR_FBX_ADDRESS.cpu1
 
 # WAM Coin (official miner)
 wam-miner -o stratum+tcp://veinpool.fr:3310 -u YOUR_WAM_ADDRESS.rig1
