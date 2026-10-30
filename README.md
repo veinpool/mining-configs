@@ -161,6 +161,26 @@ miner --algo beamhashIII --server veinpool.fr:3360 --user YOUR_BEAM_ADDRESS.rig1
 ## HiveOS
 VEIN Pool templates (PPLNS + SOLO) are proposed upstream in [minershive/hive-pooltemplates#1865](https://github.com/minershive/hive-pooltemplates/pull/1865). Until merged, use a *Custom* pool with `veinpool.fr:<port>`.
 
+## Squads (beta) — mine solo as a team
+
+A third mode between PPLNS and SOLO: a closed group mines solo together and shares **only the blocks the group finds**, by merit
+(PPLNS window = the squad's last 2 network difficulties of work). 1 % fee, small-miner bonus up to +5 % inside the squad too, a public
+split statement with its SHA-256 for every block. Create or join a squad: https://veinpool.fr/escouades?lang=en
+
+| Coin | Squad port | TLS | Worker name |
+|---|---|---|---|
+| Satoxcoin (KawPow) | `3143` | `13143` | `CODE-rig`, e.g. `YOUR_ADDRESS.7KQ2-rig1` |
+| Feelcoin (RandomX) | `3293` | `13293` | `CODE-rig` |
+| Phicoin (PhiHash) | `3573` | `13573` | `CODE-rig` |
+
+```
+# Satoxcoin, squad VEIN-7KQ2
+t-rex -a kawpow -o stratum+tcp://veinpool.fr:3143 -u YOUR_SATOX_ADDRESS.7KQ2-rig1 -p x
+# Feelcoin
+xmrig -a rx/0 -o veinpool.fr:3293 -u YOUR_FEEL_ADDRESS.7KQ2-rig1 -p x -k
+```
+Without a valid code the rig simply mines SOLO (it never loses a block).
+
 ## PPLNS or SOLO?
 - **PPLNS**: every block found by any VEIN miner is shared by work done — steady income.
 - **SOLO**: you keep the whole block (minus 1 %) if your rig finds it — on small networks this is realistic.
