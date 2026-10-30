@@ -55,6 +55,10 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | **GSP Coin (GSPC)** 🆕 | GhostRider | CPU | `3730` · `3731` (servers) | `3732` | [gspc](https://veinpool.fr/en/coin/gspc) |
 | **GoByte (GBX)** 🆕 | NeoScrypt | GPU | `3890` · `3891` (farms) | `3892` | [gbx](https://veinpool.fr/en/coin/gbx) |
 | **Vertcoin (VTC)** 🆕 | Verthash | GPU | `3710` · `3711` (farms) | — | [vtc](https://veinpool.fr/en/coin/vtc) |
+| **Zero (ZER)** 🆕 | Equihash 192,7 | GPU | `3690` · `3691` (farms) | `3692` | [zer](https://veinpool.fr/en/coin/zer) |
+| **Feathercoin (FTC)** 🆕 | NeoScrypt | GPU | `3810` · `3811` (farms) | `3812` | [ftc](https://veinpool.fr/en/coin/ftc) |
+| **Phoenixcoin (PXC)** 🆕 | NeoScrypt | GPU | `3680` · `3681` (farms) | `3682` | [pxc](https://veinpool.fr/en/coin/pxc) |
+| **Groestlcoin (GRS)** 🆕 | Groestl | GPU | `3800` · `3801` (farms) | `3802` | [grs](https://veinpool.fr/en/coin/grs) |
 
 Full catalog of every CPU / GPU / ASIC mineable coin (prices, volume, new launches), refreshed every 10 minutes: **https://veinpool.fr/en/pools#catalog**
 
