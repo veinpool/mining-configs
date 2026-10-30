@@ -165,7 +165,7 @@ VEIN Pool templates (PPLNS + SOLO) are proposed upstream in [minershive/hive-poo
 
 A third mode between PPLNS and SOLO: a closed group mines solo together and shares **only the blocks the group finds**, by merit
 (PPLNS window = the squad's last 2 network difficulties of work). 1 % fee, small-miner bonus up to +5 % inside the squad too, a public
-split statement with its SHA-256 for every block. Create or join a squad: https://veinpool.fr/escouades?lang=en
+split statement with its SHA-256 for every block. Create or join a squad: https://veinpool.fr/en/escouades
 
 | Coin | Squad port | TLS | Worker name |
 |---|---|---|---|
