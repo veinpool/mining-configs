@@ -52,6 +52,9 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | **Kiirocoin (KIIRO)** ⏳ opens in a few days | FiroPoW | GPU | `3650` · `3651` (farms) | `3652` | [kiiro](https://veinpool.fr/en/coin/kiiro) |
 | **FortuneBlock (FBX)** 🆕 | Mike | CPU | `3660` · `3661` (servers) | `3662` | [fbx](https://veinpool.fr/en/coin/fbx) |
 | **RIGOR (ORU)** 🆕 | OpuHash (SHA3-256) | GPU + CPU | — | `3642` (direct, 0 % fee, getblocktemplate over `http://`, no stratum) | [oru](https://veinpool.fr/en/coin/oru) |
+| **GSP Coin (GSPC)** 🆕 | GhostRider | CPU | `3730` · `3731` (servers) | `3732` | [gspc](https://veinpool.fr/en/coin/gspc) |
+| **GoByte (GBX)** 🆕 | NeoScrypt | GPU | `3890` · `3891` (farms) | `3892` | [gbx](https://veinpool.fr/en/coin/gbx) |
+| **Vertcoin (VTC)** 🆕 | Verthash | GPU | `3710` · `3711` (farms) | — | [vtc](https://veinpool.fr/en/coin/vtc) |
 
 Full catalog of every CPU / GPU / ASIC mineable coin (prices, volume, new launches), refreshed every 10 minutes: **https://veinpool.fr/en/pools#catalog**
 
