@@ -59,6 +59,8 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | **Feathercoin (FTC)** 🆕 | NeoScrypt | GPU | `3810` · `3811` (farms) | `3812` | [ftc](https://veinpool.fr/en/coin/ftc) |
 | **Phoenixcoin (PXC)** 🆕 | NeoScrypt | GPU | `3680` · `3681` (farms) | `3682` | [pxc](https://veinpool.fr/en/coin/pxc) |
 | **Groestlcoin (GRS)** 🆕 | Groestl | GPU | `3800` · `3801` (farms) | `3802` | [grs](https://veinpool.fr/en/coin/grs) |
+| **Litecoin Cash (LCC)** 🆕 | MinotaurX | CPU | `3880` · `3881` (servers) | `3882` | [lcc](https://veinpool.fr/en/coin/lcc) |
+| **MazaCoin (MAZA)** 🆕 | MinotaurX | CPU | `3870` · `3871` (servers) | `3872` | [maza](https://veinpool.fr/en/coin/maza) |
 
 Full catalog of every CPU / GPU / ASIC mineable coin (prices, volume, new launches), refreshed every 10 minutes: **https://veinpool.fr/en/pools#catalog**
 
