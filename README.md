@@ -61,6 +61,7 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | **Groestlcoin (GRS)** 🆕 | Groestl | GPU | `3800` · `3801` (farms) | `3802` | [grs](https://veinpool.fr/en/coin/grs) |
 | **Litecoin Cash (LCC)** 🆕 | MinotaurX | CPU | `3880` · `3881` (servers) | `3882` | [lcc](https://veinpool.fr/en/coin/lcc) |
 | **MazaCoin (MAZA)** 🆕 | MinotaurX | CPU | `3870` · `3871` (servers) | `3872` | [maza](https://veinpool.fr/en/coin/maza) |
+| **Yenten (YTN)** 🆕 | YespowerR16 | CPU | `3860` · `3861` (servers) | `3862` | [ytn](https://veinpool.fr/en/coin/ytn) |
 
 Full catalog of every CPU / GPU / ASIC mineable coin (prices, volume, new launches), refreshed every 10 minutes: **https://veinpool.fr/en/pools#catalog**
 
