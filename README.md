@@ -1,6 +1,6 @@
 # VEIN Pool — mining configs
 
-Ready-to-use stratum settings for all **42 coins** on **[VEIN Pool](https://veinpool.fr/en)** (EU, France): 21 GPU · 17 CPU · 4 ASIC (+ Kiirocoin in a few days).
+Ready-to-use stratum settings for all **45 coins** on **[VEIN Pool](https://veinpool.fr/en)** (EU, France): 27 GPU · 14 CPU · 4 ASIC.
 Your wallet address is your login — no account, no KYC. Add `.rigname` after the address to name each machine.
 
 🇬🇧 [veinpool.fr/en](https://veinpool.fr/en) · 🇫🇷 [veinpool.fr](https://veinpool.fr)
@@ -15,7 +15,6 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | Neurai (XNA) | KawPow | GPU | `3130` | `3132` | [xna](https://veinpool.fr/en/coin/xna) |
 | Satoxcoin (SATOX) | KawPow | GPU | `3140` | `3142` | [satox](https://veinpool.fr/en/coin/satox) |
 | Neoxa (NEOX) | KawPow | GPU | `3160` | `3162` | [neox](https://veinpool.fr/en/coin/neox) |
-| Gaelium (GAEL) | KawPow | GPU | `3240` | `3242` | [gael](https://veinpool.fr/en/coin/gael) |
 | Kerrigan (KRGN) | Equihash 192,7 | GPU | `3280` | `3282` | [krgneq](https://veinpool.fr/en/coin/krgneq) |
 | Zano (ZANO) | ProgPowZ | GPU | `3170` | `3172` | [zano](https://veinpool.fr/en/coin/zano) |
 | **Epic Cash (EPIC)** 🆕 CPU too | ProgPow + RandomX | GPU + CPU | `3150` (GPU `progpow_epic`, CPU `randomepic`) | `3152` | [epic](https://veinpool.fr/en/coin/epic) |
@@ -30,7 +29,6 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | Beam (BEAM) | BeamHash III | GPU | `3360` | `3362` | [beam](https://veinpool.fr/en/coin/beam) |
 | Grin (GRIN) | Cuckatoo32 | GPU | `3380` | `3382` | [grin](https://veinpool.fr/en/coin/grin) |
 | Warthog (WART) | Janushash | GPU + CPU | — | `3340` (direct, 0 % fee) | [wart](https://veinpool.fr/en/coin/wart) |
-| Dero (DERO) | AstroBWTv3 | CPU | — | `3350` (direct, 0 % fee, wss getwork) | [dero](https://veinpool.fr/en/coin/dero) |
 | LuckyPepe (LPEPE) | YescryptR32 | CPU | `3400` | `3402` | [lpepe](https://veinpool.fr/en/coin/lpepe) |
 | Kylacoin (KCN) | Flex | CPU | `3410` | `3412` | [kcn](https://veinpool.fr/en/coin/kcn) |
 | Cascoin (CAS) | MinotaurX | CPU | `3430` | `3432` | [cas](https://veinpool.fr/en/coin/cas) |
@@ -49,24 +47,18 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | **Bitcoin Cash (BCH)** 🆕 | SHA-256 | **ASIC · Bitaxe · NerdMiner** | — | `3610` NerdMiner · `3611` Bitaxe · `3612` ASIC (SOLO, 1 %, TLS 13610–13612) | [bch](https://veinpool.fr/en/coin/bch) |
 | **Litecoin (LTC)** 🆕 | Scrypt | **Scrypt ASIC** | — | `3620` mini Scrypt · `3622` ASIC (SOLO, 1 %, LTC only, TLS 13620 / 13622) | [ltc](https://veinpool.fr/en/coin/ltc) |
 | **Dogecoin (DOGE)** 🆕 | Scrypt | **Scrypt ASIC** | — | `3630` mini Scrypt · `3632` ASIC (SOLO, 1 %, DOGE only) | [doge](https://veinpool.fr/en/coin/doge) |
-| **Kiirocoin (KIIRO)** ⏳ opens in a few days | FiroPoW | GPU | `3650` · `3651` (farms) | `3652` | [kiiro](https://veinpool.fr/en/coin/kiiro) |
 | **FortuneBlock (FBX)** 🆕 | Mike | CPU | `3660` · `3661` (servers) | `3662` | [fbx](https://veinpool.fr/en/coin/fbx) |
-| **RIGOR (ORU)** 🆕 | OpuHash (SHA3-256) | GPU + CPU | — | `3642` (direct, 0 % fee, getblocktemplate over `http://`, no stratum) | [oru](https://veinpool.fr/en/coin/oru) |
 | **GSP Coin (GSPC)** 🆕 | GhostRider | CPU | `3730` · `3731` (servers) | `3732` | [gspc](https://veinpool.fr/en/coin/gspc) |
 | **GoByte (GBX)** 🆕 | NeoScrypt | GPU | `3890` · `3891` (farms) | `3892` | [gbx](https://veinpool.fr/en/coin/gbx) |
 | **Vertcoin (VTC)** 🆕 | Verthash | GPU | `3710` · `3711` (farms) | — | [vtc](https://veinpool.fr/en/coin/vtc) |
 | **Zero (ZER)** 🆕 | Equihash 192,7 | GPU | `3690` · `3691` (farms) | `3692` | [zer](https://veinpool.fr/en/coin/zer) |
-| **Feathercoin (FTC)** 🆕 | NeoScrypt | GPU | `3810` · `3811` (farms) | `3812` | [ftc](https://veinpool.fr/en/coin/ftc) |
 | **Phoenixcoin (PXC)** 🆕 | NeoScrypt | GPU | `3680` · `3681` (farms) | `3682` | [pxc](https://veinpool.fr/en/coin/pxc) |
 | **Groestlcoin (GRS)** 🆕 | Groestl | GPU | `3800` · `3801` (farms) | `3802` | [grs](https://veinpool.fr/en/coin/grs) |
-| **Litecoin Cash (LCC)** 🆕 | MinotaurX | CPU | `3880` · `3881` (servers) | `3882` | [lcc](https://veinpool.fr/en/coin/lcc) |
-| **MazaCoin (MAZA)** 🆕 | MinotaurX | CPU | `3870` · `3871` (servers) | `3872` | [maza](https://veinpool.fr/en/coin/maza) |
-| **Yenten (YTN)** 🆕 | YespowerR16 | CPU | `3860` · `3861` (servers) | `3862` | [ytn](https://veinpool.fr/en/coin/ytn) |
 | **Garlicoin (GRLC)** 🆕 | Allium | GPU | `3850` · `3851` (farms) | `3852` | [grlc](https://veinpool.fr/en/coin/grlc) |
 
 Full catalog of every CPU / GPU / ASIC mineable coin (prices, volume, new launches), refreshed every 10 minutes: **https://veinpool.fr/en/pools#catalog**
 
-Host for every port: `veinpool.fr` · Fee: 1 % (SOLO direct: 0 % — Zycord, Lajkto Coin, RIGOR, Warthog, Dero: the chain pays the block straight to your address) · Each coin page has copy-paste commands for Windows, Linux, HiveOS and MMPOS.
+Host for every port: `veinpool.fr` · Fee: 1 % (SOLO direct: 0 % — Zycord, Lajkto Coin, Warthog: the chain pays the block straight to your address) · Each coin page has copy-paste commands for Windows, Linux, HiveOS and MMPOS.
 
 ## Examples
 
@@ -93,7 +85,7 @@ cgminer --scrypt -o stratum+tcp://veinpool.fr:3632 -u YOUR_DOGE_ADDRESS.rig1 -p 
 SRBMiner-MULTI --algorithm progpow_epic --disable-cpu --pool veinpool.fr:3150 --wallet YOUR_EPICBOX_ADDRESS.gpu1
 SRBMiner-MULTI --algorithm randomepic --disable-gpu --pool veinpool.fr:3150 --wallet YOUR_EPICBOX_ADDRESS.cpu1
 
-# KawPow (Ravencoin shown — swap the port for Neurai, Satoxcoin, Neoxa, Gaelium)
+# KawPow (Ravencoin shown — swap the port for Neurai, Satoxcoin, Neoxa)
 t-rex -a kawpow -o stratum+tcp://veinpool.fr:3080 -u YOUR_ADDRESS.rig1 -p x
 
 # Firo
@@ -105,8 +97,6 @@ xmrig -a rx/2 -o veinpool.fr:3300 -u YOUR_ZCD_ADDRESS -p rig1
 # Lajkto Coin (SOLO direct, 0 % fee; young coin: 15 % founder premine, not listed yet)
 xmrig -a rx/0 -o veinpool.fr:3702 -u YOUR_LKCT_ADDRESS.rig1 -p x -k
 
-# Kiirocoin (same FiroPoW settings as Firo; opens in a few days)
-t-rex -a firopow -o stratum+tcp://veinpool.fr:3650 -u YOUR_KIIRO_ADDRESS.rig1 -p x
 
 # FortuneBlock (CPU, Mike; not listed on an exchange yet)
 SRBMiner-MULTI --algorithm mike --disable-gpu --pool veinpool.fr:3660 --wallet YOUR_FBX_ADDRESS.cpu1
@@ -117,8 +107,6 @@ wam-miner -o stratum+tcp://veinpool.fr:3310 -u YOUR_WAM_ADDRESS.rig1
 # Warthog SOLO direct — Janushash needs the GPU AND the CPU
 bzminer -a warthog -w YOUR_WART_ADDRESS.rig1 -p stratum+tcp://veinpool.fr:3340 --nvidia --amd --cpu
 
-# Dero SOLO direct (CPU) — the wallet must be registered (Engram / dero-wallet-cli do it on creation)
-dero-miner --wallet-address YOUR_DERO_ADDRESS --daemon-rpc-address veinpool.fr:3350 --mining-threads 8
 
 # Grin (Cuckatoo32) — login = your grin1… slatepack address
 miner --algo grin32 --server veinpool.fr:3380 --user YOUR_GRIN1_ADDRESS.rig1   # GMiner
