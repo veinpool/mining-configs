@@ -1,6 +1,6 @@
 # VEIN Pool — mining configs
 
-Ready-to-use stratum settings for all **45 coins** on **[VEIN Pool](https://veinpool.fr/en)** (EU, France): 27 GPU · 14 CPU · 4 ASIC.
+Ready-to-use stratum settings for all **47 coins** on **[VEIN Pool](https://veinpool.fr/en)** (EU, France): 28 GPU · 14 CPU · 5 ASIC.
 Your wallet address is your login — no account, no KYC. Add `.rigname` after the address to name each machine.
 
 🇬🇧 [veinpool.fr/en](https://veinpool.fr/en) · 🇫🇷 [veinpool.fr](https://veinpool.fr)
@@ -55,6 +55,8 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | **Phoenixcoin (PXC)** 🆕 | NeoScrypt | GPU | `3680` · `3681` (farms) | `3682` | [pxc](https://veinpool.fr/en/coin/pxc) |
 | **Groestlcoin (GRS)** 🆕 | Groestl | GPU | `3800` · `3801` (farms) | `3802` | [grs](https://veinpool.fr/en/coin/grs) |
 | **Garlicoin (GRLC)** 🆕 | Allium | GPU | `3850` · `3851` (farms) | `3852` | [grlc](https://veinpool.fr/en/coin/grlc) |
+| **Monacoin (MONA)** 🆕 | Lyra2REv2 | GPU | `3240` · `3241` (farms) | `3242` | [mona](https://veinpool.fr/en/coin/mona) |
+| **Dash (DASH)** 🆕 | X11 | ASIC | `3810` · `3811` (farms) | `3812` | [dash](https://veinpool.fr/en/coin/dash) |
 
 Full catalog of every CPU / GPU / ASIC mineable coin (prices, volume, new launches), refreshed every 10 minutes: **https://veinpool.fr/en/pools#catalog**
 
