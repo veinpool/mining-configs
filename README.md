@@ -5,6 +5,8 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 
 🇬🇧 [veinpool.fr/en](https://veinpool.fr/en) · 🇫🇷 [veinpool.fr](https://veinpool.fr)
 
+📊 **Not sure which pool to pick?** The [live pool leaderboard](https://veinpool.fr/en/classement) ranks every pool by miners, rigs, hashrate, blocks and interest. Pools grouped by algorithm (RandomX, KawPow, ProgPow…): [veinpool.fr/en/algo](https://veinpool.fr/en/algo).
+
 ## Ports
 
 | Coin | Algo | HW | Pool (PPLNS) | SOLO | Page |
