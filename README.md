@@ -1,6 +1,6 @@
 # VEIN Pool — mining configs
 
-Ready-to-use stratum settings for all **47 coins** on **[VEIN Pool](https://veinpool.fr/en)** (EU, France): 28 GPU · 14 CPU · 5 ASIC.
+Ready-to-use stratum settings for all **48 coins** on **[VEIN Pool](https://veinpool.fr/en)** (EU, France): 28 GPU · 14 CPU · 5 ASIC.
 Your wallet address is your login — no account, no KYC. Add `.rigname` after the address to name each machine.
 
 🇬🇧 [veinpool.fr/en](https://veinpool.fr/en) · 🇫🇷 [veinpool.fr](https://veinpool.fr)
@@ -9,6 +9,7 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 
 | Coin | Algo | HW | Pool (PPLNS) | SOLO | Page |
 |---|---|---|---|---|---|
+| **Pearl (PRL)** 🆕 0.5 % fee | PearlHash | GPU | `3740` (TLS `13740`) | `3742` (0 % fee, TLS `13742`) | [prl](https://veinpool.fr/en/coin/prl) |
 | Quantus (QTC) | QPoW | GPU | `3040` | `3042` | [qtc](https://veinpool.fr/en/coin/qtc) |
 | Firo (FIRO) | FiroPoW | GPU | `3060` | `3062` | [firo](https://veinpool.fr/en/coin/firo) |
 | Ravencoin (RVN) | KawPow | GPU | `3080` | `3082` | [rvn](https://veinpool.fr/en/coin/rvn) |
@@ -16,7 +17,6 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | Satoxcoin (SATOX) | KawPow | GPU | `3140` | `3142` | [satox](https://veinpool.fr/en/coin/satox) |
 | Neoxa (NEOX) | KawPow | GPU | `3160` | `3162` | [neox](https://veinpool.fr/en/coin/neox) |
 | Kerrigan (KRGN) | Equihash 192,7 | GPU | `3280` | `3282` | [krgneq](https://veinpool.fr/en/coin/krgneq) |
-| Zano (ZANO) | ProgPowZ | GPU | `3170` | `3172` | [zano](https://veinpool.fr/en/coin/zano) |
 | **Epic Cash (EPIC)** 🆕 CPU too | ProgPow + RandomX | GPU + CPU | `3150` (GPU `progpow_epic`, CPU `randomepic`) | `3152` | [epic](https://veinpool.fr/en/coin/epic) |
 | Qubitcoin (QTC) | Qhash | GPU | `3210` | `3212` | [qubit](https://veinpool.fr/en/coin/qubit) |
 | Ycash (YEC) | Equihash 192,7 | GPU | `3230` | `3232` | [yec](https://veinpool.fr/en/coin/yec) |
@@ -65,6 +65,9 @@ Host for every port: `veinpool.fr` · Fee: 1 % (SOLO direct: 0 % — Zycord, Laj
 ## Examples
 
 ```bash
+# Pearl (PRL) — PearlHash, NVIDIA / AMD. PPLNS 0.5 % fee (3740), SOLO 0 % fee (3742)
+SRBMiner-MULTI --algorithm pearlhash --disable-cpu --pool veinpool.fr:3740 --wallet YOUR_PRL1P_ADDRESS.rig1 --password x
+
 # Bitcoin SOLO lottery — NerdMiner / Bitaxe / ASIC: type these in the device's web page (no software)
 #   NerdMiner (ESP32):      pool veinpool.fr  port 3600  BTC address = YOUR_BTC_ADDRESS
 #   Bitaxe / NerdAxe (AxeOS): Stratum URL veinpool.fr  Port 3601  User YOUR_BTC_ADDRESS.rig1  Password x
