@@ -5,6 +5,10 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 
 🇬🇧 [veinpool.fr/en](https://veinpool.fr/en) · 🇫🇷 [veinpool.fr](https://veinpool.fr)
 
+✅ **Tracked on MiningBoard**: compare our hashrate, fees and payouts independently on [miningboard.com/pools/veinpool.fr](https://miningboard.com/pools/veinpool.fr).
+
+<a href="https://miningboard.com/pools/veinpool.fr?utm_source=veinpool.fr&utm_medium=referral&utm_campaign=tracked_on_miningboard"><img src="https://veinpool.fr/assets/partners/mb-badge-dark.svg" alt="Tracked on MiningBoard" height="44"></a>
+
 📊 **Not sure which pool to pick?** The [live pool leaderboard](https://veinpool.fr/en/classement) ranks every pool by miners, rigs, hashrate, blocks and interest. Pools grouped by algorithm (RandomX, KawPow, ProgPow…): [veinpool.fr/en/algo](https://veinpool.fr/en/algo).
 
 ## Ports
