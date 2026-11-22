@@ -1,6 +1,6 @@
 # VEIN Pool — mining configs
 
-Ready-to-use stratum settings for all **48 coins** on **[VEIN Pool](https://veinpool.fr/en)** (EU, France): 28 GPU · 14 CPU · 5 ASIC.
+Ready-to-use stratum settings for all **49 coins** on **[VEIN Pool](https://veinpool.fr/en)** (EU, France): 29 GPU · 14 CPU · 5 ASIC.
 Your wallet address is your login — no account, no KYC. Add `.rigname` after the address to name each machine.
 
 🇬🇧 [veinpool.fr/en](https://veinpool.fr/en) · 🇫🇷 [veinpool.fr](https://veinpool.fr)
@@ -27,6 +27,7 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | Qubitcoin (QTC) | Qhash | GPU | `3210` | `3212` | [qubit](https://veinpool.fr/en/coin/qubit) |
 | Ycash (YEC) | Equihash 192,7 | GPU | `3230` | `3232` | [yec](https://veinpool.fr/en/coin/yec) |
 | Tari (XTM) | RandomXT | CPU | `3070` | `3072` | [xtm](https://veinpool.fr/en/coin/xtm) |
+| **Tari C29 (XTM)** 🆕 | Cuckaroo29 | GPU | `3650` | `3652` | [xtmc](https://veinpool.fr/en/coin/xtmc) |
 | Xelis (XEL) | XelisHash v3 | CPU | `3120` | `3122` | [xel](https://veinpool.fr/en/coin/xel) |
 | Feelcoin (FEEL) | RandomX | CPU | `3290` | `3292` | [feel](https://veinpool.fr/en/coin/feel) |
 | WAM Coin (WAM) | RandomX | CPU | `3310` (CPU) · `3311` (servers) | — | [wam](https://veinpool.fr/en/coin/wam) |
