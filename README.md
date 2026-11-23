@@ -15,7 +15,7 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 
 | Coin | Algo | HW | Pool (PPLNS) | SOLO | Page |
 |---|---|---|---|---|---|
-| **Pearl (PRL)** 🆕 0.5 % fee | PearlHash | GPU | `3740` (TLS `13740`) | `3742` (0 % fee, TLS `13742`) | [prl](https://veinpool.fr/en/coin/prl) |
+| **Pearl (PRL)** 🆕 0.5 % fee | PearlHash | GPU | `3740` (TLS `13740`) | `3742` (1 % fee, TLS `13742`) | [prl](https://veinpool.fr/en/coin/prl) |
 | Quantus (QTC) | QPoW | GPU | `3040` | `3042` | [qtc](https://veinpool.fr/en/coin/qtc) |
 | Firo (FIRO) | FiroPoW | GPU | `3060` | `3062` | [firo](https://veinpool.fr/en/coin/firo) |
 | Ravencoin (RVN) | KawPow | GPU | `3080` | `3082` | [rvn](https://veinpool.fr/en/coin/rvn) |
@@ -31,11 +31,11 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | Xelis (XEL) | XelisHash v3 | CPU | `3120` | `3122` | [xel](https://veinpool.fr/en/coin/xel) |
 | Feelcoin (FEEL) | RandomX | CPU | `3290` | `3292` | [feel](https://veinpool.fr/en/coin/feel) |
 | WAM Coin (WAM) | RandomX | CPU | `3310` (CPU) · `3311` (servers) | — | [wam](https://veinpool.fr/en/coin/wam) |
-| Zycord (ZCD) | RandomX v2 | CPU | — | `3300` (direct, 0 % fee) | [zcd](https://veinpool.fr/en/coin/zcd) |
-| Lajkto Coin (LKCT) | RandomX | CPU | — | `3702` (direct, 0 % fee) | [lkct](https://veinpool.fr/en/coin/lkct) |
+| Zycord (ZCD) | RandomX v2 | CPU | — | `3300` (direct, 1 % fee) | [zcd](https://veinpool.fr/en/coin/zcd) |
+| Lajkto Coin (LKCT) | RandomX | CPU | — | `3702` (direct, 1 % fee) | [lkct](https://veinpool.fr/en/coin/lkct) |
 | Beam (BEAM) | BeamHash III | GPU | `3360` | `3362` | [beam](https://veinpool.fr/en/coin/beam) |
 | Grin (GRIN) | Cuckatoo32 | GPU | `3380` | `3382` | [grin](https://veinpool.fr/en/coin/grin) |
-| Warthog (WART) | Janushash | GPU + CPU | — | `3340` (direct, 0 % fee) | [wart](https://veinpool.fr/en/coin/wart) |
+| Warthog (WART) | Janushash | GPU + CPU | — | `3340` (direct, 1 % fee) | [wart](https://veinpool.fr/en/coin/wart) |
 | LuckyPepe (LPEPE) | YescryptR32 | CPU | `3400` | `3402` | [lpepe](https://veinpool.fr/en/coin/lpepe) |
 | Kylacoin (KCN) | Flex | CPU | `3410` | `3412` | [kcn](https://veinpool.fr/en/coin/kcn) |
 | Cascoin (CAS) | MinotaurX | CPU | `3430` | `3432` | [cas](https://veinpool.fr/en/coin/cas) |
@@ -67,12 +67,40 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 
 Full catalog of every CPU / GPU / ASIC mineable coin (prices, volume, new launches), refreshed every 10 minutes: **https://veinpool.fr/en/pools#catalog**
 
-Host for every port: `veinpool.fr` · Fee: 1 % (SOLO direct: 0 % — Zycord, Lajkto Coin, Warthog: the chain pays the block straight to your address) · Each coin page has copy-paste commands for Windows, Linux, HiveOS and MMPOS.
+Host for every port: `veinpool.fr` · Fee: 1 % on every pool, SOLO included (SOLO direct — Zycord, Lajkto Coin, Warthog: the chain pays the block straight to your address; the fee is taken as 6 minutes of pool work every 10 hours) · Each coin page has copy-paste commands for Windows, Linux, HiveOS and MMPOS.
+
+
+## More ports: farms, squads, Cuckoo
+
+High-difficulty ports for big farms and rented hashrate (NiceHash, MiningRigRentals), squad ports (a team mines together and shares its blocks), and Epic Cash Cuckatoo31.
+
+| Coin | Ports | Page |
+|---|---|---|
+| Firo (FIRO) | `3061` PPLNS farms | [firo](https://veinpool.fr/en/coin/firo) |
+| Ravencoin (RVN) | `3081` PPLNS farms | [rvn](https://veinpool.fr/en/coin/rvn) |
+| Neurai (XNA) | `3131` PPLNS farms | [xna](https://veinpool.fr/en/coin/xna) |
+| Satoxcoin (SATOX) | `3141` PPLNS farms | [satox](https://veinpool.fr/en/coin/satox) |
+| Epic Cash (EPIC) | `3154` PPLNS Cuckoo · `3155` SOLO Cuckoo | [epic](https://veinpool.fr/en/coin/epic) |
+| Neoxa (NEOX) | `3161` PPLNS farms | [neox](https://veinpool.fr/en/coin/neox) |
+| Qubitcoin (QTC) | `3211` PPLNS farms | [qubit](https://veinpool.fr/en/coin/qubit) |
+| Ycash (YEC) | `3231` PPLNS farms | [yec](https://veinpool.fr/en/coin/yec) |
+| Feelcoin (FEEL) | `3291` PPLNS farms | [feel](https://veinpool.fr/en/coin/feel) |
+| Kerrigan (KRGN) | `3281` PPLNS farms | [krgneq](https://veinpool.fr/en/coin/krgneq) |
+| Yerbas (YERB) | `3393` Squad | [yerb](https://veinpool.fr/en/coin/yerb) |
+| LuckyPepe (LPEPE) | `3401` PPLNS farms | [lpepe](https://veinpool.fr/en/coin/lpepe) |
+| Kylacoin (KCN) | `3411` PPLNS farms | [kcn](https://veinpool.fr/en/coin/kcn) |
+| Cascoin (CAS) | `3431` PPLNS farms | [cas](https://veinpool.fr/en/coin/cas) |
+| Tidecoin (TDC) | `3441` PPLNS farms | [tdc](https://veinpool.fr/en/coin/tdc) |
+| Nexa (NEXA) | `3461` PPLNS farms | [nexa](https://veinpool.fr/en/coin/nexa) |
+| Karlsen (KLS) | `3471` PPLNS farms · `3473` SOLO farms | [kls](https://veinpool.fr/en/coin/kls) |
+| GSP Coin (GSPC) | `3733` Squad | [gspc](https://veinpool.fr/en/coin/gspc) |
+| Zero (ZER) | `3693` Squad | [zer](https://veinpool.fr/en/coin/zer) |
+| Garlicoin (GRLC) | `3853` Squad | [grlc](https://veinpool.fr/en/coin/grlc) |
 
 ## Examples
 
 ```bash
-# Pearl (PRL) — PearlHash, NVIDIA / AMD. PPLNS 0.5 % fee (3740), SOLO 0 % fee (3742)
+# Pearl (PRL) — PearlHash, NVIDIA / AMD. PPLNS 0.5 % fee (3740), SOLO 1 % fee (3742)
 SRBMiner-MULTI --algorithm pearlhash --disable-cpu --pool veinpool.fr:3740 --wallet YOUR_PRL1P_ADDRESS.rig1 --password x
 
 # Bitcoin SOLO lottery — NerdMiner / Bitaxe / ASIC: type these in the device's web page (no software)
@@ -106,7 +134,7 @@ t-rex -a firopow -o stratum+tcp://veinpool.fr:3060 -u YOUR_ADDRESS.rig1 -p x
 # Zycord (SOLO direct, blocks paid straight to your address)
 xmrig -a rx/2 -o veinpool.fr:3300 -u YOUR_ZCD_ADDRESS -p rig1
 
-# Lajkto Coin (SOLO direct, 0 % fee; young coin: 15 % founder premine, not listed yet)
+# Lajkto Coin (SOLO direct, 1 % fee; young coin: 15 % founder premine, not listed yet)
 xmrig -a rx/0 -o veinpool.fr:3702 -u YOUR_LKCT_ADDRESS.rig1 -p x -k
 
 
