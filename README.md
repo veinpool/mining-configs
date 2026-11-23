@@ -1,6 +1,6 @@
 # VEIN Pool — mining configs
 
-Ready-to-use stratum settings for all **49 coins** on **[VEIN Pool](https://veinpool.fr/en)** (EU, France): 29 GPU · 14 CPU · 5 ASIC.
+Ready-to-use stratum settings for all **51 coins** on **[VEIN Pool](https://veinpool.fr/en)** (EU, France): GPU, CPU and ASIC.
 Your wallet address is your login — no account, no KYC. Add `.rigname` after the address to name each machine.
 
 🇬🇧 [veinpool.fr/en](https://veinpool.fr/en) · 🇫🇷 [veinpool.fr](https://veinpool.fr)
@@ -28,6 +28,7 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | Ycash (YEC) | Equihash 192,7 | GPU | `3230` | `3232` | [yec](https://veinpool.fr/en/coin/yec) |
 | Tari (XTM) | RandomXT | CPU | `3070` | `3072` | [xtm](https://veinpool.fr/en/coin/xtm) |
 | **Neural Engine Byte (NEB)** 🆕 | NebHash v2 | GPU (NVIDIA) | `3970` | `3972` | [neb](https://veinpool.fr/en/coin/neb) |
+| **Ryo (RYO)** 🆕 | CryptoNight-GPU | GPU (+ CPU) | `3920` | `3922` | [ryo](https://veinpool.fr/en/coin/ryo) |
 | **Tari C29 (XTM)** | Cuckaroo29 | GPU | `3650` | `3652` | [xtmc](https://veinpool.fr/en/coin/xtmc) |
 | Xelis (XEL) | XelisHash v3 | CPU | `3120` | `3122` | [xel](https://veinpool.fr/en/coin/xel) |
 | Feelcoin (FEEL) | RandomX | CPU | `3290` | `3292` | [feel](https://veinpool.fr/en/coin/feel) |
@@ -84,6 +85,7 @@ High-difficulty ports for big farms and rented hashrate (NiceHash, MiningRigRent
 | Epic Cash (EPIC) | `3154` PPLNS Cuckoo · `3155` SOLO Cuckoo | [epic](https://veinpool.fr/en/coin/epic) |
 | Neoxa (NEOX) | `3161` PPLNS farms | [neox](https://veinpool.fr/en/coin/neox) |
 | Qubitcoin (QTC) | `3211` PPLNS farms | [qubit](https://veinpool.fr/en/coin/qubit) |
+| Ryo (RYO) | `3921` PPLNS farms | [ryo](https://veinpool.fr/en/coin/ryo) |
 | Ycash (YEC) | `3231` PPLNS farms | [yec](https://veinpool.fr/en/coin/yec) |
 | Feelcoin (FEEL) | `3291` PPLNS farms | [feel](https://veinpool.fr/en/coin/feel) |
 | Kerrigan (KRGN) | `3281` PPLNS farms | [krgneq](https://veinpool.fr/en/coin/krgneq) |
