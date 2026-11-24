@@ -56,6 +56,7 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | **Bitcoin Cash (BCH)** 🆕 | SHA-256 | **ASIC · Bitaxe · NerdMiner** | — | `3610` NerdMiner · `3611` Bitaxe · `3612` ASIC (SOLO, 1 %, TLS 13610–13612) | [bch](https://veinpool.fr/en/coin/bch) |
 | **Litecoin (LTC)** 🆕 | Scrypt | **Scrypt ASIC** | — | `3620` mini Scrypt · `3622` ASIC (SOLO, 1 %, LTC only, TLS 13620 / 13622) | [ltc](https://veinpool.fr/en/coin/ltc) |
 | **Dogecoin (DOGE)** 🆕 | Scrypt | **Scrypt ASIC** | — | `3630` mini Scrypt · `3632` ASIC (SOLO, 1 %, DOGE only) | [doge](https://veinpool.fr/en/coin/doge) |
+| **Rincoin (RIN)** 🆕 | RinHash (BLAKE3 + Argon2d + SHA3) | CPU | `3930` · `3931` (servers) | `3932` | [rin](https://veinpool.fr/en/coin/rin) |
 | **FortuneBlock (FBX)** 🆕 | Mike | CPU | `3660` · `3661` (servers) | `3662` | [fbx](https://veinpool.fr/en/coin/fbx) |
 | **GSP Coin (GSPC)** 🆕 | GhostRider | CPU | `3730` · `3731` (servers) | `3732` | [gspc](https://veinpool.fr/en/coin/gspc) |
 | **GoByte (GBX)** 🆕 | NeoScrypt | GPU | `3890` · `3891` (farms) | `3892` | [gbx](https://veinpool.fr/en/coin/gbx) |
@@ -140,6 +141,9 @@ xmrig -a rx/2 -o veinpool.fr:3300 -u YOUR_ZCD_ADDRESS -p rig1
 # Lajkto Coin (SOLO direct, 1 % fee; young coin: 15 % founder premine, not listed yet)
 xmrig -a rx/0 -o veinpool.fr:3702 -u YOUR_LKCT_ADDRESS.rig1 -p x -k
 
+
+# Rincoin (CPU, RinHash; 6.25 RIN per block until block 840,000, then 4 RIN)
+SRBMiner-MULTI --algorithm rinhash --disable-gpu --pool veinpool.fr:3930 --wallet YOUR_RIN_ADDRESS.cpu1
 
 # FortuneBlock (CPU, Mike; not listed on an exchange yet)
 SRBMiner-MULTI --algorithm mike --disable-gpu --pool veinpool.fr:3660 --wallet YOUR_FBX_ADDRESS.cpu1
