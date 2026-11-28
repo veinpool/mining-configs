@@ -27,6 +27,7 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | Qubitcoin (QTC) | Qhash | GPU | `3210` | `3212` | [qubit](https://veinpool.fr/en/coin/qubit) |
 | Ycash (YEC) | Equihash 192,7 | GPU | `3230` | `3232` | [yec](https://veinpool.fr/en/coin/yec) |
 | Tari (XTM) | RandomXT | CPU | `3070` | `3072` | [xtm](https://veinpool.fr/en/coin/xtm) |
+| **Quantum Bitcoin (QBTC)** 🆕 | SHA-256 (QBTC header) | GPU (CUDA / OpenCL) + CPU | — | `3480` (direct, 1 % fee) | [qbtc](https://veinpool.fr/en/coin/qbtc) |
 | **Neural Engine Byte (NEB)** 🆕 | NebHash v2 | GPU (NVIDIA) | `3970` | `3972` | [neb](https://veinpool.fr/en/coin/neb) |
 | **Ryo (RYO)** 🆕 | CryptoNight-GPU | GPU (+ CPU) | `3920` | `3922` | [ryo](https://veinpool.fr/en/coin/ryo) |
 | **Tari C29 (XTM)** | Cuckaroo29 | GPU | `3650` | `3652` | [xtmc](https://veinpool.fr/en/coin/xtmc) |
@@ -60,7 +61,6 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | **FortuneBlock (FBX)** 🆕 | Mike | CPU | `3660` · `3661` (servers) | `3662` | [fbx](https://veinpool.fr/en/coin/fbx) |
 | **GSP Coin (GSPC)** 🆕 | GhostRider | CPU | `3730` · `3731` (servers) | `3732` | [gspc](https://veinpool.fr/en/coin/gspc) |
 | **GoByte (GBX)** 🆕 | NeoScrypt | GPU | `3890` · `3891` (farms) | `3892` | [gbx](https://veinpool.fr/en/coin/gbx) |
-| **Vertcoin (VTC)** 🆕 | Verthash | GPU | `3710` · `3711` (farms) | — | [vtc](https://veinpool.fr/en/coin/vtc) |
 | **Zero (ZER)** 🆕 | Equihash 192,7 | GPU | `3690` · `3691` (farms) | `3692` | [zer](https://veinpool.fr/en/coin/zer) |
 | **Phoenixcoin (PXC)** 🆕 | NeoScrypt | GPU | `3680` · `3681` (farms) | `3682` | [pxc](https://veinpool.fr/en/coin/pxc) |
 | **Groestlcoin (GRS)** 🆕 | Groestl | GPU | `3800` · `3801` (farms) | `3802` | [grs](https://veinpool.fr/en/coin/grs) |
@@ -70,7 +70,7 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 
 Full catalog of every CPU / GPU / ASIC mineable coin (prices, volume, new launches), refreshed every 10 minutes: **https://veinpool.fr/en/pools#catalog**
 
-Host for every port: `veinpool.fr` · Fee: 1 % on every pool, SOLO included (SOLO direct — Zycord, Lajkto Coin, Warthog: the chain pays the block straight to your address; the fee is taken as 6 minutes of pool work every 10 hours) · Each coin page has copy-paste commands for Windows, Linux, HiveOS and MMPOS.
+Host for every port: `veinpool.fr` · Fee: 1 % on every pool, SOLO included (SOLO direct — Quantum Bitcoin, Zycord, Lajkto Coin, Warthog: the chain pays the block straight to your address; the fee is taken as 6 minutes of pool work every 10 hours) · Each coin page has copy-paste commands for Windows, Linux, HiveOS and MMPOS.
 
 
 ## More ports: farms, squads, Cuckoo
@@ -134,6 +134,10 @@ t-rex -a kawpow -o stratum+tcp://veinpool.fr:3080 -u YOUR_ADDRESS.rig1 -p x
 
 # Firo
 t-rex -a firopow -o stratum+tcp://veinpool.fr:3060 -u YOUR_ADDRESS.rig1 -p x
+
+# Quantum Bitcoin (SOLO direct, blocks paid straight to your qbtc1 address) - GodConsole QBTC miner (CUDA / OpenCL)
+# one GPU per process if you also have an integrated GPU: QBTC_GPU_DEVICES=0
+quantum-btc --stratum stratum+tcp://veinpool.fr:3480 --address YOUR_QBTC_ADDRESS.rig1
 
 # Zycord (SOLO direct, blocks paid straight to your address)
 xmrig -a rx/2 -o veinpool.fr:3300 -u YOUR_ZCD_ADDRESS -p rig1
