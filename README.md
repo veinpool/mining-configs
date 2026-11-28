@@ -27,6 +27,7 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | Qubitcoin (QTC) | Qhash | GPU | `3210` | `3212` | [qubit](https://veinpool.fr/en/coin/qubit) |
 | Ycash (YEC) | Equihash 192,7 | GPU | `3230` | `3232` | [yec](https://veinpool.fr/en/coin/yec) |
 | Tari (XTM) | RandomXT | CPU | `3070` | `3072` | [xtm](https://veinpool.fr/en/coin/xtm) |
+| **Vexta (VTX)** 🆕 | SHA-256 | ASIC | `3830` (PPLNS) | `3831` Bitaxe · `3832` ASIC (SOLO, 1 % fee) | [vtx](https://veinpool.fr/en/coin/vtx) |
 | **Opacra (OPCA)** 🆕 | RandomOPCA (rx/opca) | CPU | — | `3772` (direct, 1 % fee) | [opca](https://veinpool.fr/en/coin/opca) |
 | **Quantum Bitcoin (QBTC)** 🆕 | SHA-256 (QBTC header) | GPU (CUDA / OpenCL) + CPU | — | `3480` (direct, 1 % fee) | [qbtc](https://veinpool.fr/en/coin/qbtc) |
 | **Neural Engine Byte (NEB)** 🆕 | NebHash v2 | GPU (NVIDIA) | `3970` | `3972` | [neb](https://veinpool.fr/en/coin/neb) |
