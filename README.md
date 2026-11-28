@@ -27,6 +27,7 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 | Qubitcoin (QTC) | Qhash | GPU | `3210` | `3212` | [qubit](https://veinpool.fr/en/coin/qubit) |
 | Ycash (YEC) | Equihash 192,7 | GPU | `3230` | `3232` | [yec](https://veinpool.fr/en/coin/yec) |
 | Tari (XTM) | RandomXT | CPU | `3070` | `3072` | [xtm](https://veinpool.fr/en/coin/xtm) |
+| **Opacra (OPCA)** 🆕 | RandomOPCA (rx/opca) | CPU | — | `3772` (direct, 1 % fee) | [opca](https://veinpool.fr/en/coin/opca) |
 | **Quantum Bitcoin (QBTC)** 🆕 | SHA-256 (QBTC header) | GPU (CUDA / OpenCL) + CPU | — | `3480` (direct, 1 % fee) | [qbtc](https://veinpool.fr/en/coin/qbtc) |
 | **Neural Engine Byte (NEB)** 🆕 | NebHash v2 | GPU (NVIDIA) | `3970` | `3972` | [neb](https://veinpool.fr/en/coin/neb) |
 | **Ryo (RYO)** 🆕 | CryptoNight-GPU | GPU (+ CPU) | `3920` | `3922` | [ryo](https://veinpool.fr/en/coin/ryo) |
@@ -70,7 +71,7 @@ Your wallet address is your login — no account, no KYC. Add `.rigname` after t
 
 Full catalog of every CPU / GPU / ASIC mineable coin (prices, volume, new launches), refreshed every 10 minutes: **https://veinpool.fr/en/pools#catalog**
 
-Host for every port: `veinpool.fr` · Fee: 1 % on every pool, SOLO included (SOLO direct — Quantum Bitcoin, Zycord, Lajkto Coin, Warthog: the chain pays the block straight to your address; the fee is taken as 6 minutes of pool work every 10 hours) · Each coin page has copy-paste commands for Windows, Linux, HiveOS and MMPOS.
+Host for every port: `veinpool.fr` · Fee: 1 % on every pool, SOLO included (SOLO direct — Quantum Bitcoin, Opacra, Zycord, Lajkto Coin, Warthog: the chain pays the block straight to your address; the fee is taken as 6 minutes of pool work every 10 hours) · Each coin page has copy-paste commands for Windows, Linux, HiveOS and MMPOS.
 
 
 ## More ports: farms, squads, Cuckoo
@@ -134,6 +135,9 @@ t-rex -a kawpow -o stratum+tcp://veinpool.fr:3080 -u YOUR_ADDRESS.rig1 -p x
 
 # Firo
 t-rex -a firopow -o stratum+tcp://veinpool.fr:3060 -u YOUR_ADDRESS.rig1 -p x
+
+# Opacra (SOLO direct, blocks paid straight to your address) - Opacra's own XMRig build (stock XMRig has no rx/opca)
+xmrig -a rx/opca -o veinpool.fr:3772 -u YOUR_OPCA_ADDRESS.rig1 -p x -k
 
 # Quantum Bitcoin (SOLO direct, blocks paid straight to your qbtc1 address) - GodConsole QBTC miner (CUDA / OpenCL)
 # one GPU per process if you also have an integrated GPU: QBTC_GPU_DEVICES=0
